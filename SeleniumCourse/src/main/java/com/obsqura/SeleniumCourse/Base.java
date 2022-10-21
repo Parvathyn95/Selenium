@@ -9,14 +9,10 @@ public class Base {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\admin\\eclipse-workspace\\SeleniumCourse\\src\\main\\java\\Resources\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.amazon.ae/");
+		driver.manage().window().maximize();
 		return driver;
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Base obj=new Base();
-		obj.initBrowser();
-		
+	public void browserClose() {
+		driver.close();
 	}
-
 }
