@@ -12,8 +12,10 @@ public class HardAssignTest extends Base{
 	}
 	@Test
 	public void driverNull() {
-		String currentDrive;
+		String currentDrive,expDrive="opesmount";
 		currentDrive=driver.getCurrentUrl();
-		Assert.assertNotNull(currentDrive);
+		if(currentDrive.contains(expDrive)) {
+			Assert.assertNotNull(true,"Driver url is not null");
+		}
 	}
 }

@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18776" started-at="2022-11-01T10:56:10Z" finished-at="2022-11-01T10:56:28Z">
+  <suite name="Default suite" duration-ms="15815" started-at="2022-11-01T11:17:32Z" finished-at="2022-11-01T11:17:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18776" started-at="2022-11-01T10:56:10Z" finished-at="2022-11-01T10:56:28Z">
+    <test name="Default test" duration-ms="15815" started-at="2022-11-01T11:17:32Z" finished-at="2022-11-01T11:17:48Z">
       <class name="com.obsqura.HardAssertAssign.HardAssignTest">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="10975" started-at="2022-11-01T14:56:10Z" finished-at="2022-11-01T14:56:21Z">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="8617" started-at="2022-11-01T15:17:32Z" finished-at="2022-11-01T15:17:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="driverNull()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="driverNull" duration-ms="31" started-at="2022-11-01T14:56:21Z" finished-at="2022-11-01T14:56:21Z">
+        <test-method status="PASS" signature="driverNull()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="driverNull" duration-ms="29" started-at="2022-11-01T15:17:41Z" finished-at="2022-11-01T15:17:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverNull -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="208" started-at="2022-11-01T14:56:21Z" finished-at="2022-11-01T14:56:21Z">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="198" started-at="2022-11-01T15:17:41Z" finished-at="2022-11-01T15:17:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="7314" started-at="2022-11-01T14:56:21Z" finished-at="2022-11-01T14:56:28Z">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="6726" started-at="2022-11-01T15:17:41Z" finished-at="2022-11-01T15:17:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="verifyTitle" duration-ms="18" started-at="2022-11-01T14:56:28Z" finished-at="2022-11-01T14:56:28Z">
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="verifyTitle" duration-ms="17" started-at="2022-11-01T15:17:48Z" finished-at="2022-11-01T15:17:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="162" started-at="2022-11-01T14:56:28Z" finished-at="2022-11-01T14:56:28Z">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="197" started-at="2022-11-01T15:17:48Z" finished-at="2022-11-01T15:17:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
