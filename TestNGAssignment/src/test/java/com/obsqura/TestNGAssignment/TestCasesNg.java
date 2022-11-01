@@ -12,9 +12,10 @@ public class TestCasesNg extends BaseTestNg{
 	}
 	@Test
 	public void verifyUrl() {
-		String actualUrl;
+		String actualUrl,expUrl="www.";
 		actualUrl=driver.getCurrentUrl();
-		Assert.assertNotNull(actualUrl);
+		Boolean verifyUrl=actualUrl.contains(expUrl);
+		Assert.assertTrue(verifyUrl);
 	}
 	@Test
 	public void verifyPageSource() {
