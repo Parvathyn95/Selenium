@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27481" started-at="2022-11-01T11:54:01Z" finished-at="2022-11-01T11:54:29Z">
+  <suite name="Default suite" duration-ms="39765" started-at="2022-11-01T18:27:50Z" finished-at="2022-11-01T18:28:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27481" started-at="2022-11-01T11:54:01Z" finished-at="2022-11-01T11:54:29Z">
+    <test name="Default test" duration-ms="39765" started-at="2022-11-01T18:27:50Z" finished-at="2022-11-01T18:28:29Z">
       <class name="com.obsqura.HardAssertAssign.HardAssignTest">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="9725" started-at="2022-11-01T15:54:01Z" finished-at="2022-11-01T15:54:11Z">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="10618" started-at="2022-11-01T22:27:50Z" finished-at="2022-11-01T22:28:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="driverNull()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="driverNull" duration-ms="35" started-at="2022-11-01T15:54:11Z" finished-at="2022-11-01T15:54:11Z">
+        <test-method status="PASS" signature="driverIsNull()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="driverIsNull" duration-ms="8" started-at="2022-11-01T22:28:00Z" finished-at="2022-11-01T22:28:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverIsNull -->
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="244" started-at="2022-11-01T22:28:00Z" finished-at="2022-11-01T22:28:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="6567" started-at="2022-11-01T22:28:01Z" finished-at="2022-11-01T22:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="driverNull()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="driverNull" duration-ms="17" started-at="2022-11-01T22:28:07Z" finished-at="2022-11-01T22:28:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverNull -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="205" started-at="2022-11-01T15:54:11Z" finished-at="2022-11-01T15:54:11Z">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="121" started-at="2022-11-01T22:28:07Z" finished-at="2022-11-01T22:28:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="6772" started-at="2022-11-01T15:54:11Z" finished-at="2022-11-01T15:54:18Z">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="5581" started-at="2022-11-01T22:28:07Z" finished-at="2022-11-01T22:28:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="loginPageNullNot()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="loginPageNullNot" duration-ms="3681" started-at="2022-11-01T15:54:18Z" finished-at="2022-11-01T15:54:22Z">
+        <test-method status="PASS" signature="loginPageNullNot()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="loginPageNullNot" duration-ms="4617" started-at="2022-11-01T22:28:13Z" finished-at="2022-11-01T22:28:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageNullNot -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="101" started-at="2022-11-01T15:54:22Z" finished-at="2022-11-01T15:54:22Z">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="149" started-at="2022-11-01T22:28:17Z" finished-at="2022-11-01T22:28:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="6746" started-at="2022-11-01T15:54:22Z" finished-at="2022-11-01T15:54:29Z">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="initBrowser" is-config="true" duration-ms="11648" started-at="2022-11-01T22:28:18Z" finished-at="2022-11-01T22:28:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="verifyTitle" duration-ms="22" started-at="2022-11-01T15:54:29Z" finished-at="2022-11-01T15:54:29Z">
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="verifyTitle" duration-ms="11" started-at="2022-11-01T22:28:29Z" finished-at="2022-11-01T22:28:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="146" started-at="2022-11-01T15:54:29Z" finished-at="2022-11-01T15:54:29Z">
+        <test-method status="PASS" signature="browserClose()[pri:0, instance:com.obsqura.HardAssertAssign.HardAssignTest@f6c48ac]" name="browserClose" is-config="true" duration-ms="142" started-at="2022-11-01T22:28:29Z" finished-at="2022-11-01T22:28:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserClose -->

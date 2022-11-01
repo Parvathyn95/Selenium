@@ -11,6 +11,10 @@ public class HardAssignTest extends Base{
 		Assert.assertEquals(expTitle, actTitle);
 	}
 	@Test
+	public void driverIsNull() {
+			Assert.assertNotNull(driver);
+	}
+	@Test
 	public void driverNull() {
 		String currentDrive,expDrive="opesmount";
 		currentDrive=driver.getCurrentUrl();
