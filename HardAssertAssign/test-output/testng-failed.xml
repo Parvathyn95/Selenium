@@ -6,7 +6,7 @@
       <class name="com.obsqura.HardAssertAssign.HardAssignTest">
         <methods>
           <include name="browserClose"/>
-          <include name="driverNull"/>
+          <include name="regPageNullNot"/>
           <include name="initBrowser"/>
         </methods>
       </class> <!-- com.obsqura.HardAssertAssign.HardAssignTest -->

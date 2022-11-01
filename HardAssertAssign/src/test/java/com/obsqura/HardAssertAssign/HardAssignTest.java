@@ -18,4 +18,13 @@ public class HardAssignTest extends Base{
 			Assert.assertNotNull(true,"Driver url is not null");
 		}
 	}
+		@Test
+		public void loginPageNullNot() {
+			String currentTitle,expTitle="Account";
+			driver.navigate().to("http://www.opesmount.in/grocerystore1/index.php?route=account/login");
+			currentTitle=driver.getTitle();
+			if(currentTitle.contains(expTitle)) {
+				Assert.assertNotNull(true,"Driver url is not null");
+			}
+	}
 }
