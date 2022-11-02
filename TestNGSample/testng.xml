@@ -5,11 +5,12 @@
     <classes>
       <class name="com.obsqura.TestNGSample.BrowserCommands"/>
       <class name="com.obsqura.TestNGSample.Locators">
-      	<method>
+      	<methods>
       		<include name="locatingClass"/>
+      		<exclude name="locatingFlag"/>
       		<exclude name="locatingById"/>
       		<exclude name="locatingByClass"/>
-      	</method>
+      	</methods>
       </class>
      
     </classes>

@@ -3,13 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGSample.BrowserCommands">
-        <methods>
-          <include name="browserQuit"/>
-          <include name="verifyTitle"/>
-          <include name="initBrowser"/>
-        </methods>
-      </class> <!-- com.obsqura.TestNGSample.BrowserCommands -->
       <class name="com.obsqura.TestNGSample.Locators">
         <methods>
           <include name="browserQuit"/>
