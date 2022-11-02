@@ -12,7 +12,7 @@ public class Base {
 	public void initBrowser() {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\admin\\eclipse-workspace\\JUnitSample\\src\\main\\java\\Resources\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("https://www.amazon.ae/");
+		driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
 		
 	}
