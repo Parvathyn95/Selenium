@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="com.obsqura.TestNGAssignment.TestCasesTestNG"/>
+      <class name="com.obsqura.TestNGAssignment.LocatorsId"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

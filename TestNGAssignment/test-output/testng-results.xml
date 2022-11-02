@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40780" started-at="2022-11-01T04:01:49Z" finished-at="2022-11-01T04:02:30Z">
+  <suite name="Default suite" duration-ms="86754" started-at="2022-11-02T11:32:26Z" finished-at="2022-11-02T11:33:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40780" started-at="2022-11-01T04:01:49Z" finished-at="2022-11-01T04:02:30Z">
+    <test name="Default test" duration-ms="86754" started-at="2022-11-02T11:32:26Z" finished-at="2022-11-02T11:33:53Z">
       <class name="com.obsqura.TestNGAssignment.LocatorsId">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@f6c48ac]" name="initBrowser" is-config="true" duration-ms="8468" started-at="2022-11-01T08:01:49Z" finished-at="2022-11-01T08:01:57Z">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@3f197a46]" name="initBrowser" is-config="true" duration-ms="41077" started-at="2022-11-02T15:32:27Z" finished-at="2022-11-02T15:33:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="locatorById()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@f6c48ac]" name="locatorById" duration-ms="31338" started-at="2022-11-01T08:01:57Z" description="locating with Id" finished-at="2022-11-01T08:02:29Z">
+        <test-method status="PASS" signature="locatingAll()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@3f197a46]" name="locatingAll" duration-ms="6867" started-at="2022-11-02T15:33:08Z" description="locating by class All" finished-at="2022-11-02T15:33:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locatingAll -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@3f197a46]" name="browserQuit" is-config="true" duration-ms="1317" started-at="2022-11-02T15:33:15Z" finished-at="2022-11-02T15:33:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@3f197a46]" name="initBrowser" is-config="true" duration-ms="9105" started-at="2022-11-02T15:33:16Z" finished-at="2022-11-02T15:33:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="locatingElectronicsnFashion()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@3f197a46]" name="locatingElectronicsnFashion" duration-ms="8373" started-at="2022-11-02T15:33:25Z" description="locating by class Electronics Fashion" finished-at="2022-11-02T15:33:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locatingElectronicsnFashion -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@3f197a46]" name="browserQuit" is-config="true" duration-ms="961" started-at="2022-11-02T15:33:34Z" finished-at="2022-11-02T15:33:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@3f197a46]" name="initBrowser" is-config="true" duration-ms="8761" started-at="2022-11-02T15:33:35Z" finished-at="2022-11-02T15:33:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="locatorById()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@3f197a46]" name="locatorById" duration-ms="8742" started-at="2022-11-02T15:33:43Z" description="locating with Id" finished-at="2022-11-02T15:33:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- locatorById -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@f6c48ac]" name="browserQuit" is-config="true" duration-ms="952" started-at="2022-11-01T08:02:29Z" finished-at="2022-11-01T08:02:30Z">
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGAssignment.LocatorsId@3f197a46]" name="browserQuit" is-config="true" duration-ms="927" started-at="2022-11-02T15:33:52Z" finished-at="2022-11-02T15:33:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
