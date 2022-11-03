@@ -3,13 +3,15 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.obsqura.TestNGSample.BrowserCommands"/>
+     <!--  <class name="com.obsqura.TestNGSample.BrowserCommands">
+      	<methods>
+      		<include name="verifyUrl"/>
+      	</methods>
+      
+      </class> -->
       <class name="com.obsqura.TestNGSample.Locators">
       	<methods>
-      		<include name="locatingClass"/>
-      		<exclude name="locatingFlag"/>
-      		<exclude name="locatingById"/>
-      		<exclude name="locatingByClass"/>
+      		<include name="locatingCSSCartToDeals"/>
       	</methods>
       </class>
      
