@@ -11,7 +11,7 @@
       </class> -->
       <class name="com.obsqura.TestNGSample.Locators">
       	<methods>
-      		<include name="locatingCSSCartToDeals"/>
+      		<include name="locatingXpathClickSearch"/>
       	</methods>
       </class>
      

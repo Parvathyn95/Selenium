@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.TestNGSample.Locators" hash-for-method="locatingCSSCartToDeals">locatingCSSCartToDeals</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.TestNGSample.Locators" hash-for-method="locatingXpathAllSuggestions">locatingXpathAllSuggestions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,23 +117,46 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.obsqura.TestNGSample.Locators</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="locatingCSSCartToDeals">
-                  </a> <!-- locatingCSSCartToDeals -->
-                  <span class="method-name">locatingCSSCartToDeals</span>
+                  <a name="locatingXpathAllSuggestions">
+                  </a> <!-- locatingXpathAllSuggestions -->
+                  <span class="method-name">locatingXpathAllSuggestions</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@id=&apos;s-suggestion s-recentSearchDistinct s-suggestion-ellipsis-direction&apos;])[2]//span[1]&quot;}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-23R50OH&apos;, ip: &apos;192.168.0.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f61a2377c5c40e6e03e7a8ac4908100, findElement {using=xpath, value=(//div[@id=&apos;s-suggestion s-recentSearchDistinct s-suggestion-ellipsis-direction&apos;])[2]//span[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60215}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60215/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f61a2377c5c40e6e03e7a8ac4908100
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.obsqura.TestNGSample.Locators.locatingXpathAllSuggestions(Locators.java:122)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Locating By CSS Selector(class) Cart To Deals)                  </em>
+(Locating By xpath All Suggestions)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -148,7 +171,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.obsqura.TestNGSample.Locators&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;locatingCSSCartToDeals&quot;/&gt;
+          &lt;include name=&quot;locatingXpathAllSuggestions&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.obsqura.TestNGSample.Locators --&gt;
     &lt;/classes&gt;
@@ -192,14 +215,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'locatingCSSCartToDeals')
+data.setCell(0, 1, 'locatingXpathAllSuggestions')
 data.setCell(0, 2, 'com.obsqura.TestNGSample.Locators')
-data.setCell(0, 3, 4473);
+data.setCell(0, 3, 327);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 327 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -214,7 +237,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">23 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -222,19 +245,47 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">locatingById</span>
                 <br/>
-                <span class="ignored-method-name">locatingAll</span>
-                <br/>
                 <span class="ignored-method-name">locatingCSSSetLang</span>
-                <br/>
-                <span class="ignored-method-name">locatingCSSAll</span>
                 <br/>
                 <span class="ignored-method-name">locatingByClass</span>
                 <br/>
-                <span class="ignored-method-name">locatingCSSSel</span>
-                <br/>
                 <span class="ignored-method-name">locatingFlag</span>
                 <br/>
+                <span class="ignored-method-name">locatingXpathAirdopeAddCart</span>
+                <br/>
                 <span class="ignored-method-name">locatingName</span>
+                <br/>
+                <span class="ignored-method-name">locatingXpathAccountlists</span>
+                <br/>
+                <span class="ignored-method-name">locatingXpathSignIn</span>
+                <br/>
+                <span class="ignored-method-name">locatingXpathSearch</span>
+                <br/>
+                <span class="ignored-method-name">locatingCSSCartToDeals</span>
+                <br/>
+                <span class="ignored-method-name">locatingAll</span>
+                <br/>
+                <span class="ignored-method-name">locatingXpathCookwareDining</span>
+                <br/>
+                <span class="ignored-method-name">locatingXpathdir</span>
+                <br/>
+                <span class="ignored-method-name">locatingCSSAll</span>
+                <br/>
+                <span class="ignored-method-name">locatingCSSFlag</span>
+                <br/>
+                <span class="ignored-method-name">locatingXpathBooks</span>
+                <br/>
+                <span class="ignored-method-name">locatingXpathClickSearch</span>
+                <br/>
+                <span class="ignored-method-name">locatingCSSSel</span>
+                <br/>
+                <span class="ignored-method-name">locatingFashionWomen</span>
+                <br/>
+                <span class="ignored-method-name">locatingStartSelling</span>
+                <br/>
+                <span class="ignored-method-name">locatingXpathBestSellers</span>
+                <br/>
+                <span class="ignored-method-name">locatingXpathElectroTop</span>
                 <br/>
                 <span class="ignored-method-name">locatingClass</span>
                 <br/>
@@ -254,12 +305,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">locatingCSSCartToDeals</span>
-                <span class="method-start">9719 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">locatingXpathAllSuggestions</span>
+                <span class="method-start">11036 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit</span>
-                <span class="method-start">14193 ms</span>
+                <span class="method-start">11379 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
