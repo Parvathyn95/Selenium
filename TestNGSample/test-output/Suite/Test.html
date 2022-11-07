@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 07 13:09:04 GST 2022</td>
+<td>Started on:</td><td>Mon Nov 07 15:49:07 GST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11667 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10489 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.obsqura.TestNGSample.Locators.locatingCSSMostGiftd()'><b>locatingCSSMostGiftd</b><br>Test class: com.obsqura.TestNGSample.Locators<br>Test method: Locating By CSS Selector(tag inner text) MostGiftd</td>
-<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression a:contains(text(),&apos;Most Gifted&apos;) because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;a:contains(text(),&apos;Most Gifted&apos;)&apos; is not a valid XPath expression.
+<td title='com.obsqura.TestNGSample.Locators.locatingXpathSubsSave()'><b>locatingXpathSubsSave</b><br>Test class: com.obsqura.TestNGSample.Locators<br>Test method: Locating By xpath to subscribe save</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//div[@id=&apos;nav-subnav&apos;])[3]//child::a[4]//child::(span[@class=&apos;nav-a-content&apos;])[4] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;(//div[@id=&apos;nav-subnav&apos;])[3]//child::a[4]//child::(span[@class=&apos;nav-a-content&apos;])[4]&apos; is not a valid XPath expression.
   (Session info: chrome=107.0.5304.88)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;DESKTOP-23R50OH&apos;, ip: &apos;192.168.0.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ccf63304ce3205155269207ed5eda88, findElement {using=xpath, value=a:contains(text(),&apos;Most Gifted&apos;)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64389/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ccf63304ce3205155269207ed5eda88
+Command: [954b933a370956c2336c475a92f1f2a6, findElement {using=xpath, value=(//div[@id=&apos;nav-subnav&apos;])[3]//child::a[4]//child::(span[@class=&apos;nav-a-content&apos;])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50122/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 954b933a370956c2336c475a92f1f2a6
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -97,18 +97,18 @@ Session ID: 9ccf63304ce3205155269207ed5eda88
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at com.obsqura.TestNGSample.Locators.locatingCSSMostGiftd(Locators.java:71)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace778162712", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace778162712'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression a:contains(text(),&apos;Most Gifted&apos;) because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;a:contains(text(),&apos;Most Gifted&apos;)&apos; is not a valid XPath expression.
+	at com.obsqura.TestNGSample.Locators.locatingXpathSubsSave(Locators.java:137)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace548482954", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace548482954'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//div[@id=&apos;nav-subnav&apos;])[3]//child::a[4]//child::(span[@class=&apos;nav-a-content&apos;])[4] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;(//div[@id=&apos;nav-subnav&apos;])[3]//child::a[4]//child::(span[@class=&apos;nav-a-content&apos;])[4]&apos; is not a valid XPath expression.
   (Session info: chrome=107.0.5304.88)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;DESKTOP-23R50OH&apos;, ip: &apos;192.168.0.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ccf63304ce3205155269207ed5eda88, findElement {using=xpath, value=a:contains(text(),&apos;Most Gifted&apos;)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64389/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ccf63304ce3205155269207ed5eda88
+Command: [954b933a370956c2336c475a92f1f2a6, findElement {using=xpath, value=(//div[@id=&apos;nav-subnav&apos;])[3]//child::a[4]//child::(span[@class=&apos;nav-a-content&apos;])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50122/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 954b933a370956c2336c475a92f1f2a6
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -124,7 +124,7 @@ Session ID: 9ccf63304ce3205155269207ed5eda88
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at com.obsqura.TestNGSample.Locators.locatingCSSMostGiftd(Locators.java:71)
+	at com.obsqura.TestNGSample.Locators.locatingXpathSubsSave(Locators.java:137)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -151,7 +151,7 @@ Session ID: 9ccf63304ce3205155269207ed5eda88
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>2</td>
+<td>1</td>
 <td>com.obsqura.TestNGSample.Locators@31ef45e3</td></tr>
 </table><p>
 </body>

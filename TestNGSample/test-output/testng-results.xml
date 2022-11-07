@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="1" ignored="25" total="26" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="11667" started-at="2022-11-07T09:09:04Z" finished-at="2022-11-07T09:09:16Z">
+  <suite name="Suite" duration-ms="10489" started-at="2022-11-07T11:49:07Z" finished-at="2022-11-07T11:49:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="11667" started-at="2022-11-07T09:09:04Z" finished-at="2022-11-07T09:09:16Z">
+    <test name="Test" duration-ms="10489" started-at="2022-11-07T11:49:07Z" finished-at="2022-11-07T11:49:18Z">
       <class name="com.obsqura.TestNGSample.Locators">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.Locators@31ef45e3]" name="initBrowser" is-config="true" duration-ms="8701" started-at="2022-11-07T13:09:04Z" finished-at="2022-11-07T13:09:13Z">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.Locators@31ef45e3]" name="initBrowser" is-config="true" duration-ms="7552" started-at="2022-11-07T15:49:07Z" finished-at="2022-11-07T15:49:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="FAIL" signature="locatingCSSMostGiftd()[pri:0, instance:com.obsqura.TestNGSample.Locators@31ef45e3]" name="locatingCSSMostGiftd" duration-ms="2048" started-at="2022-11-07T13:09:13Z" description="Locating By CSS Selector(tag inner text) MostGiftd" finished-at="2022-11-07T13:09:15Z">
+        <test-method status="FAIL" signature="locatingXpathSubsSave()[pri:0, instance:com.obsqura.TestNGSample.Locators@31ef45e3]" name="locatingXpathSubsSave" duration-ms="1989" started-at="2022-11-07T15:49:15Z" description="Locating By xpath to subscribe save" finished-at="2022-11-07T15:49:17Z">
           <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression a:contains(text(),'Most Gifted') because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'a:contains(text(),'Most Gifted')' is not a valid XPath expression.
+              <![CDATA[invalid selector: Unable to locate an element with the xpath expression (//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4]' is not a valid XPath expression.
   (Session info: chrome=107.0.5304.88)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-23R50OH', ip: '192.168.0.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ccf63304ce3205155269207ed5eda88, findElement {using=xpath, value=a:contains(text(),'Most Gifted')}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64389/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ccf63304ce3205155269207ed5eda88]]>
+Command: [954b933a370956c2336c475a92f1f2a6, findElement {using=xpath, value=(//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50122/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 954b933a370956c2336c475a92f1f2a6]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression a:contains(text(),'Most Gifted') because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'a:contains(text(),'Most Gifted')' is not a valid XPath expression.
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4]' is not a valid XPath expression.
   (Session info: chrome=107.0.5304.88)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: '4.4.0', revision: 'e5c75ed026a'
 System info: host: 'DESKTOP-23R50OH', ip: '192.168.0.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ccf63304ce3205155269207ed5eda88, findElement {using=xpath, value=a:contains(text(),'Most Gifted')}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64389/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ccf63304ce3205155269207ed5eda88
+Command: [954b933a370956c2336c475a92f1f2a6, findElement {using=xpath, value=(//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50122/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 954b933a370956c2336c475a92f1f2a6
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -51,7 +51,7 @@ Session ID: 9ccf63304ce3205155269207ed5eda88
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at com.obsqura.TestNGSample.Locators.locatingCSSMostGiftd(Locators.java:71)
+	at com.obsqura.TestNGSample.Locators.locatingXpathSubsSave(Locators.java:137)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -82,8 +82,8 @@ Session ID: 9ccf63304ce3205155269207ed5eda88
           </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- locatingCSSMostGiftd -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.Locators@31ef45e3]" name="browserQuit" is-config="true" duration-ms="881" started-at="2022-11-07T13:09:15Z" finished-at="2022-11-07T13:09:16Z">
+        </test-method> <!-- locatingXpathSubsSave -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.Locators@31ef45e3]" name="browserQuit" is-config="true" duration-ms="915" started-at="2022-11-07T15:49:17Z" finished-at="2022-11-07T15:49:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->

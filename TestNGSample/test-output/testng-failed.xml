@@ -6,7 +6,7 @@
       <class name="com.obsqura.TestNGSample.Locators">
         <methods>
           <include name="browserQuit"/>
-          <include name="locatingCSSMostGiftd"/>
+          <include name="locatingXpathSubsSave"/>
           <include name="initBrowser"/>
         </methods>
       </class> <!-- com.obsqura.TestNGSample.Locators -->

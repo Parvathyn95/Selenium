@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.TestNGSample.Locators" hash-for-method="locatingCSSMostGiftd">locatingCSSMostGiftd</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.obsqura.TestNGSample.Locators" hash-for-method="locatingXpathSubsSave">locatingXpathSubsSave</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -125,19 +125,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="locatingCSSMostGiftd">
-                  </a> <!-- locatingCSSMostGiftd -->
-                  <span class="method-name">locatingCSSMostGiftd</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression a:contains(text(),&apos;Most Gifted&apos;) because of the following error:
-SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;a:contains(text(),&apos;Most Gifted&apos;)&apos; is not a valid XPath expression.
+                  <a name="locatingXpathSubsSave">
+                  </a> <!-- locatingXpathSubsSave -->
+                  <span class="method-name">locatingXpathSubsSave</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//div[@id=&apos;nav-subnav&apos;])[3]//child::a[4]//child::(span[@class=&apos;nav-a-content&apos;])[4] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;(//div[@id=&apos;nav-subnav&apos;])[3]//child::a[4]//child::(span[@class=&apos;nav-a-content&apos;])[4]&apos; is not a valid XPath expression.
   (Session info: chrome=107.0.5304.88)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;DESKTOP-23R50OH&apos;, ip: &apos;192.168.0.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9ccf63304ce3205155269207ed5eda88, findElement {using=xpath, value=a:contains(text(),&apos;Most Gifted&apos;)}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64389}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64389/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9ccf63304ce3205155269207ed5eda88
+Command: [954b933a370956c2336c475a92f1f2a6, findElement {using=xpath, value=(//div[@id=&apos;nav-subnav&apos;])[3]//child::a[4]//child::(span[@class=&apos;nav-a-content&apos;])[4]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50122/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 954b933a370956c2336c475a92f1f2a6
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -149,11 +149,11 @@ Session ID: 9ccf63304ce3205155269207ed5eda88
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at com.obsqura.TestNGSample.Locators.locatingCSSMostGiftd(Locators.java:71)
+	at com.obsqura.TestNGSample.Locators.locatingXpathSubsSave(Locators.java:137)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(Locating By CSS Selector(tag inner text) MostGiftd)                  </em>
+(Locating By xpath to subscribe save)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,7 +172,7 @@ Session ID: 9ccf63304ce3205155269207ed5eda88
     &lt;classes&gt;
       &lt;class name=&quot;com.obsqura.TestNGSample.Locators&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;locatingCSSMostGiftd&quot;/&gt;
+          &lt;include name=&quot;locatingXpathSubsSave&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- com.obsqura.TestNGSample.Locators --&gt;
     &lt;/classes&gt;
@@ -216,14 +216,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'locatingCSSMostGiftd')
+data.setCell(0, 1, 'locatingXpathSubsSave')
 data.setCell(0, 2, 'com.obsqura.TestNGSample.Locators')
-data.setCell(0, 3, 2048);
+data.setCell(0, 3, 1989);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -312,12 +312,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">locatingCSSMostGiftd</span>
-                <span class="method-start">8701 ms</span>
+                <span class="method-name">locatingXpathSubsSave</span>
+                <span class="method-start">7552 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit</span>
-                <span class="method-start">10765 ms</span>
+                <span class="method-start">9558 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

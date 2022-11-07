@@ -65,11 +65,11 @@ public class Locators extends Base {
 	public void locatingCSSFlag() {
 		driver.findElement(By.cssSelector("a#nav-logo-sprites[aria-label='Amazon']")).click();
 	}
-	/*@Test(description="Locating By CSS Selector(tag inner text) MostGiftd")
-	public void locatingCSSMostGiftd() {
-		driver.navigate().to("https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers");
-		driver.findElement(By.xpath("a:contains(text(),'Most Gifted')")).click();
+	/*@Test(description="Locating By CSS Selector(tag inner text)Account & Lists")
+	public void locatingCSSAccountLists() {
+		driver.findElement(By.cssSelector("span:contains('Account & Lists'))")).click();
 	}*/
+	//css selector does not support contains. Therefore you are getting an error saying the selector is invalid.
 	@Test(description="Locating By xpath contains Garage")
 	public void locatingxpathGarage() {
 		driver.navigate().to("https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home");
@@ -129,8 +129,13 @@ public class Locators extends Base {
 	}
 	@Test(description="Locating By xpath ClickSearch")
 	public void locatingXpathClickSearch() {
-		driver.findElement(By.xpath("(//div[@class='nav-fill'])[2]//div[1]")).click();
+		driver.findElement(By.xpath("(//div[@class='nav-fill'])[2]//child::div[1]")).click();
 	}
+	/*@Test(description="Locating By xpath to subscribe save")
+	public void locatingXpathSubsSave() {
+		driver.navigate().to("https://www.amazon.in/deals?ref_=nav_cs_gb");
+		driver.findElement(By.xpath("(//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4]")).click();
+	}*/
 /*	@Test(description="Locating By xpath All Suggestions")
 	public void locatingXpathAllSuggestions() {
 		driver.findElement(By.xpath("(//div[@id='s-suggestion s-recentSearchDistinct s-suggestion-ellipsis-direction'])[2]//span[1]")).click();
