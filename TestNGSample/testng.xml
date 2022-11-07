@@ -11,7 +11,7 @@
       </class> -->
       <class name="com.obsqura.TestNGSample.Locators">
       	<methods>
-      		<include name="locatingXpathClickSearch"/>
+      		<include name="locatingxpathGarage"/>
       	</methods>
       </class>
      

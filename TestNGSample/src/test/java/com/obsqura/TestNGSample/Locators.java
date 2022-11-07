@@ -57,9 +57,23 @@ public class Locators extends Base {
 		driver.navigate().to("https://www.amazon.in/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2Fref%3Dnav_logo&ref_=topnav_lang");
 		driver.findElement(By.cssSelector("input.a-button-input")).click();
 	}
+	@Test(description="Locating By CSS Selector(tag n attribute) Lawn n Garden")
+	public void locatingCSSLawnGrdn() {
+		driver.findElement(By.cssSelector("option[value='search-alias=lawngarden']")).click();
+	}
 	@Test(description="Locating By CSS Selector(tag class n attribute) Flag")
 	public void locatingCSSFlag() {
 		driver.findElement(By.cssSelector("a#nav-logo-sprites[aria-label='Amazon']")).click();
+	}
+	/*@Test(description="Locating By CSS Selector(tag inner text) MostGiftd")
+	public void locatingCSSMostGiftd() {
+		driver.navigate().to("https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers");
+		driver.findElement(By.xpath("a:contains(text(),'Most Gifted')")).click();
+	}*/
+	@Test(description="Locating By xpath contains Garage")
+	public void locatingxpathGarage() {
+		driver.navigate().to("https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home");
+		driver.findElement(By.xpath("//a[contains(text(),'Garage')]")).click();
 	}
 	@Test(description="Locating By xpath Search bar")
 	public void locatingXpathSearch() {
