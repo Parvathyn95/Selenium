@@ -9,12 +9,15 @@
       	</methods>
       
       </class> -->
-      <class name="com.obsqura.TestNGSample.Locators">
+      <!-- <class name="com.obsqura.TestNGSample.Locators">
       	<methods>
-      		<include name="locatingXpathClickSearch"/>
+      		<include name="locatingxpathGarage"/>
+      		<include name="locatingXpathCookwareDining"/>
+      		<include name="locatingXpathAirdopeAddCart"/>
       	</methods>
-      </class>
-     
+      </class> -->
+      		 <class name="com.obsqura.TestNGSample.TestExecutionSpeed"/>
+        <!-- <class name="com.obsqura.TestNGSample.WebElementCommands"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

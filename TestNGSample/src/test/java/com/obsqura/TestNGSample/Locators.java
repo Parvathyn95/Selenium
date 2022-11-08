@@ -70,7 +70,7 @@ public class Locators extends Base {
 		driver.findElement(By.cssSelector("span:contains('Account & Lists'))")).click();
 	}*/
 	//css selector does not support contains. Therefore you are getting an error saying the selector is invalid.
-	@Test(description="Locating By xpath contains Garage")
+	@Test(priority=2)//(description="Locating By xpath contains Garage")
 	public void locatingxpathGarage() {
 		driver.navigate().to("https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home");
 		driver.findElement(By.xpath("//a[contains(text(),'Garage')]")).click();
@@ -98,13 +98,13 @@ public class Locators extends Base {
 		driver.navigate().to("https://www.amazon.in/Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books");
 		driver.findElement(By.xpath("//img[@alt='Bestsellers']")).click();
 	}
-	@Test(description="Locating By xpath AirdopeAddCart")
+	@Test(priority=0)//(description="Locating By xpath AirdopeAddCart")
 	public void locatingXpathAirdopeAddCart() {
 		driver.navigate().to("https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics");
 		driver.navigate().to("https://www.amazon.in/dp/B09N3ZNHTY/ref=s9_acsd_al_bw_c2_x_0_t?pf_rd_m=A1K21FY43GMZF8&pf_rd_s=merchandised-search-4&pf_rd_r=H0Z2PZ0D9Y107N4MZB66&pf_rd_t=101&pf_rd_p=912786e9-e447-4e13-ab5b-b62b83cb6dac&pf_rd_i=976419031");
 		driver.findElement(By.xpath("//input[@title='Add to Shopping Cart']")).click();
 	}
-	@Test(description="Locating By xpath CookwareDining")
+	@Test(priority=1)//(description="Locating By xpath CookwareDining")
 	public void locatingXpathCookwareDining() {
 		driver.navigate().to("https://www.amazon.in/Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home");
 		driver.findElement(By.xpath("//span[text()='Cookware & Dining']")).click();
@@ -131,6 +131,7 @@ public class Locators extends Base {
 	public void locatingXpathClickSearch() {
 		driver.findElement(By.xpath("(//div[@class='nav-fill'])[2]//child::div[1]")).click();
 	}
+	
 	/*@Test(description="Locating By xpath to subscribe save")
 	public void locatingXpathSubsSave() {
 		driver.navigate().to("https://www.amazon.in/deals?ref_=nav_cs_gb");

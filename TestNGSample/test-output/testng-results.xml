@@ -1,93 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="25" total="26" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10489" started-at="2022-11-07T11:49:07Z" finished-at="2022-11-07T11:49:18Z">
+  <suite name="Suite" duration-ms="40987" started-at="2022-11-08T11:55:00Z" finished-at="2022-11-08T11:55:41Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="10489" started-at="2022-11-07T11:49:07Z" finished-at="2022-11-07T11:49:18Z">
-      <class name="com.obsqura.TestNGSample.Locators">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.Locators@31ef45e3]" name="initBrowser" is-config="true" duration-ms="7552" started-at="2022-11-07T15:49:07Z" finished-at="2022-11-07T15:49:15Z">
+    <test name="Test" duration-ms="40987" started-at="2022-11-08T11:55:00Z" finished-at="2022-11-08T11:55:41Z">
+      <class name="com.obsqura.TestNGSample.TestExecutionSpeed">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="initBrowser" is-config="true" duration-ms="9007" started-at="2022-11-08T15:55:00Z" finished-at="2022-11-08T15:55:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="FAIL" signature="locatingXpathSubsSave()[pri:0, instance:com.obsqura.TestNGSample.Locators@31ef45e3]" name="locatingXpathSubsSave" duration-ms="1989" started-at="2022-11-07T15:49:15Z" description="Locating By xpath to subscribe save" finished-at="2022-11-07T15:49:17Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression (//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4]' is not a valid XPath expression.
-  (Session info: chrome=107.0.5304.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-23R50OH', ip: '192.168.0.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [954b933a370956c2336c475a92f1f2a6, findElement {using=xpath, value=(//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50122/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 954b933a370956c2336c475a92f1f2a6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression (//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4]' is not a valid XPath expression.
-  (Session info: chrome=107.0.5304.88)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-23R50OH', ip: '192.168.0.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [954b933a370956c2336c475a92f1f2a6, findElement {using=xpath, value=(//div[@id='nav-subnav'])[3]//child::a[4]//child::(span[@class='nav-a-content'])[4]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50122/devtoo..., se:cdpVersion: 107.0.5304.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 954b933a370956c2336c475a92f1f2a6
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at com.obsqura.TestNGSample.Locators.locatingXpathSubsSave(Locators.java:137)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+        <test-method status="PASS" signature="execSpeedCSS()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="execSpeedCSS" duration-ms="1476" started-at="2022-11-08T15:55:09Z" finished-at="2022-11-08T15:55:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- locatingXpathSubsSave -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.Locators@31ef45e3]" name="browserQuit" is-config="true" duration-ms="915" started-at="2022-11-07T15:49:17Z" finished-at="2022-11-07T15:49:18Z">
+        </test-method> <!-- execSpeedCSS -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="browserQuit" is-config="true" duration-ms="838" started-at="2022-11-08T15:55:11Z" finished-at="2022-11-08T15:55:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.TestNGSample.Locators -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="initBrowser" is-config="true" duration-ms="7886" started-at="2022-11-08T15:55:12Z" finished-at="2022-11-08T15:55:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="execSpeedClass()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="execSpeedClass" duration-ms="1589" started-at="2022-11-08T15:55:19Z" finished-at="2022-11-08T15:55:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execSpeedClass -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="browserQuit" is-config="true" duration-ms="883" started-at="2022-11-08T15:55:21Z" finished-at="2022-11-08T15:55:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="initBrowser" is-config="true" duration-ms="5868" started-at="2022-11-08T15:55:22Z" finished-at="2022-11-08T15:55:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="execSpeedId()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="execSpeedId" duration-ms="1852" started-at="2022-11-08T15:55:28Z" finished-at="2022-11-08T15:55:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execSpeedId -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="browserQuit" is-config="true" duration-ms="857" started-at="2022-11-08T15:55:30Z" finished-at="2022-11-08T15:55:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="initBrowser" is-config="true" duration-ms="8525" started-at="2022-11-08T15:55:30Z" finished-at="2022-11-08T15:55:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="execSpeedXpath()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="execSpeedXpath" duration-ms="1330" started-at="2022-11-08T15:55:39Z" finished-at="2022-11-08T15:55:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execSpeedXpath -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="browserQuit" is-config="true" duration-ms="858" started-at="2022-11-08T15:55:40Z" finished-at="2022-11-08T15:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.TestNGSample.TestExecutionSpeed -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
