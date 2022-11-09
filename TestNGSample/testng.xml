@@ -19,7 +19,9 @@
       		<!--  <class name="com.obsqura.TestNGSample.TestExecutionSpeed"/> -->
          <class name="com.obsqura.TestNGSample.WebElementCommands">
          	<methods>
-         		<include name="getTotal"/>
+         		<!-- <include name="sendKeysSample"/>
+         		<include name="getTotal"/> -->
+         		<include name="checkIntString"/>
          	</methods>
          </class> 
     </classes>

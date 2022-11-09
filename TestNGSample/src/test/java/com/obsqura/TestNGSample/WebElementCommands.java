@@ -36,4 +36,22 @@ public class WebElementCommands extends BaseObs {
 		}
 		Assert.assertTrue(flag, "Actual and obtained total values are not the same");		
 	}
+	@Test
+	public void checkIntString() {
+		String valA="55",valB="Strawberry",actualValue;
+		int aVal;
+		Boolean flag=false;
+		driver.findElement(By.xpath("(//input[@id='value-a'])[1]")).sendKeys(valA);
+		driver.findElement(By.xpath("(//input[@id='value-b'])[1]")).sendKeys(valB);
+		driver.findElement(By.xpath("(//button[@id='button-two'])[1]")).click();
+		aVal=Integer.valueOf(valA);
+		String totVal=aVal+valB;
+		actualValue = driver.findElement(By.xpath("(//div[@id='message-two'])[1]")).getText();
+		//55Strawberry
+		if(totVal!=actualValue) {
+			flag=true;
+		}
+		Assert.assertTrue(flag, "Only 2 integer values can be accepted");
+	}		
+	
 }
