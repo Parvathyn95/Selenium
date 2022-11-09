@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40987" started-at="2022-11-08T11:55:00Z" finished-at="2022-11-08T11:55:41Z">
+  <suite name="Suite" duration-ms="8317" started-at="2022-11-09T03:43:47Z" finished-at="2022-11-09T03:43:55Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="40987" started-at="2022-11-08T11:55:00Z" finished-at="2022-11-08T11:55:41Z">
-      <class name="com.obsqura.TestNGSample.TestExecutionSpeed">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="initBrowser" is-config="true" duration-ms="9007" started-at="2022-11-08T15:55:00Z" finished-at="2022-11-08T15:55:09Z">
+    <test name="Test" duration-ms="8317" started-at="2022-11-09T03:43:47Z" finished-at="2022-11-09T03:43:55Z">
+      <class name="com.obsqura.TestNGSample.WebElementCommands">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.WebElementCommands@57fffcd7]" name="initBrowser" is-config="true" duration-ms="7023" started-at="2022-11-09T07:43:47Z" finished-at="2022-11-09T07:43:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="execSpeedCSS()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="execSpeedCSS" duration-ms="1476" started-at="2022-11-08T15:55:09Z" finished-at="2022-11-08T15:55:11Z">
+        <test-method status="PASS" signature="getTotal()[pri:0, instance:com.obsqura.TestNGSample.WebElementCommands@57fffcd7]" name="getTotal" duration-ms="425" started-at="2022-11-09T07:43:54Z" finished-at="2022-11-09T07:43:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- execSpeedCSS -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="browserQuit" is-config="true" duration-ms="838" started-at="2022-11-08T15:55:11Z" finished-at="2022-11-08T15:55:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="initBrowser" is-config="true" duration-ms="7886" started-at="2022-11-08T15:55:12Z" finished-at="2022-11-08T15:55:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="execSpeedClass()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="execSpeedClass" duration-ms="1589" started-at="2022-11-08T15:55:19Z" finished-at="2022-11-08T15:55:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- execSpeedClass -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="browserQuit" is-config="true" duration-ms="883" started-at="2022-11-08T15:55:21Z" finished-at="2022-11-08T15:55:22Z">
+        </test-method> <!-- getTotal -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.WebElementCommands@57fffcd7]" name="browserQuit" is-config="true" duration-ms="844" started-at="2022-11-09T07:43:54Z" finished-at="2022-11-09T07:43:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="initBrowser" is-config="true" duration-ms="5868" started-at="2022-11-08T15:55:22Z" finished-at="2022-11-08T15:55:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="execSpeedId()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="execSpeedId" duration-ms="1852" started-at="2022-11-08T15:55:28Z" finished-at="2022-11-08T15:55:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- execSpeedId -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="browserQuit" is-config="true" duration-ms="857" started-at="2022-11-08T15:55:30Z" finished-at="2022-11-08T15:55:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="initBrowser" is-config="true" duration-ms="8525" started-at="2022-11-08T15:55:30Z" finished-at="2022-11-08T15:55:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="execSpeedXpath()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="execSpeedXpath" duration-ms="1330" started-at="2022-11-08T15:55:39Z" finished-at="2022-11-08T15:55:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- execSpeedXpath -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.TestExecutionSpeed@f6c48ac]" name="browserQuit" is-config="true" duration-ms="858" started-at="2022-11-08T15:55:40Z" finished-at="2022-11-08T15:55:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.TestNGSample.TestExecutionSpeed -->
+      </class> <!-- com.obsqura.TestNGSample.WebElementCommands -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

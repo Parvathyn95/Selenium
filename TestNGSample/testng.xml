@@ -16,8 +16,12 @@
       		<include name="locatingXpathAirdopeAddCart"/>
       	</methods>
       </class> -->
-      		 <class name="com.obsqura.TestNGSample.TestExecutionSpeed"/>
-        <!-- <class name="com.obsqura.TestNGSample.WebElementCommands"/> -->
+      		<!--  <class name="com.obsqura.TestNGSample.TestExecutionSpeed"/> -->
+         <class name="com.obsqura.TestNGSample.WebElementCommands">
+         	<methods>
+         		<include name="getTotal"/>
+         	</methods>
+         </class> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
