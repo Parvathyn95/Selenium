@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGSample.WebElementCommands">
+      <class name="com.obsqura.TestNGSample.GetCSSValue">
         <methods>
           <include name="initBrowser"/>
-          <include name="getColor"/>
+          <include name="getCSSBgColor"/>
           <include name="browserQuit"/>
+          <include name="compareLocationAbv"/>
         </methods>
-      </class> <!-- com.obsqura.TestNGSample.WebElementCommands -->
+      </class> <!-- com.obsqura.TestNGSample.GetCSSValue -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

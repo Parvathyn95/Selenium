@@ -20,7 +20,7 @@ public class GetCSSValue extends BaseObs {
 		int locationX=location.getX();*/	
 	}
 	@Test
-	public void getColor() {
+	public void getCSSColor() {
 		String color, expColor="rgba(255, 255, 255, 1)";
 		Boolean flag=false;
 		color= driver.findElement(By.xpath("//button[@id='button-one']")).getCssValue("color");
@@ -42,4 +42,5 @@ public class GetCSSValue extends BaseObs {
 		}
 		Assert.assertTrue(flag, "Your Message is located above Show Message Button");
 	}
+	
 }

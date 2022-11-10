@@ -26,10 +26,10 @@
          </class>  -->
          <class name="com.obsqura.TestNGSample.GetCSSValue">
          	<methods>
-         		<!-- <include name="getCSSBgColor"/> 
-         		<include name="getCSSColor"/>  -->
- 					<include name="compareLocation"/> 
-         		
+         		<include name="getCSSBgColor"/> 
+         		<include name="getCSSColor"/> 
+ 				<include name="compareLocation"/>  
+ 				
          	</methods>
          </class> 
     </classes>
