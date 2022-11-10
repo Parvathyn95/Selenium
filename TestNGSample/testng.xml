@@ -17,11 +17,19 @@
       	</methods>
       </class> -->
       		<!--  <class name="com.obsqura.TestNGSample.TestExecutionSpeed"/> -->
-         <class name="com.obsqura.TestNGSample.WebElementCommands">
+         <!-- <class name="com.obsqura.TestNGSample.WebElementCommands">
          	<methods>
-         		<!-- <include name="sendKeysSample"/>
-         		<include name="getTotal"/> -->
-         		<include name="checkIntString"/>
+         		<include name="sendKeysSample"/> 
+         		<include name="getTotal"/> 
+         		<include name="checkIntString"/> 
+         	</methods>
+         </class>  -->
+         <class name="com.obsqura.TestNGSample.GetCSSValue">
+         	<methods>
+         		<!-- <include name="getCSSBgColor"/> 
+         		<include name="getCSSColor"/>  -->
+ 					<include name="compareLocation"/> 
+         		
          	</methods>
          </class> 
     </classes>

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGSample.TestExecutionSpeed">
+      <class name="com.obsqura.TestNGSample.WebElementCommands">
         <methods>
-          <include name="browserQuit"/>
-          <include name="execSpeedXpath"/>
           <include name="initBrowser"/>
+          <include name="getColor"/>
+          <include name="browserQuit"/>
         </methods>
-      </class> <!-- com.obsqura.TestNGSample.TestExecutionSpeed -->
+      </class> <!-- com.obsqura.TestNGSample.WebElementCommands -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

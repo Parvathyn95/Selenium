@@ -1,6 +1,7 @@
 package com.obsqura.TestNGSample;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -38,7 +39,7 @@ public class WebElementCommands extends BaseObs {
 	}
 	@Test
 	public void checkIntString() {
-		String valA="55",valB="Strawberry",actualValue;
+			String valA="55",valB="Strawberry",actualValue;
 		int aVal;
 		Boolean flag=false;
 		driver.findElement(By.xpath("(//input[@id='value-a'])[1]")).sendKeys(valA);
@@ -52,6 +53,6 @@ public class WebElementCommands extends BaseObs {
 			flag=true;
 		}
 		Assert.assertTrue(flag, "Only 2 integer values can be accepted");
-	}		
-	
+	}	
+
 }
