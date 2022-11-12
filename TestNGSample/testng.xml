@@ -24,12 +24,21 @@
          		<include name="checkIntString"/> 
          	</methods>
          </class>  -->
-         <class name="com.obsqura.TestNGSample.GetCSSValue">
+        <!--  <class name="com.obsqura.TestNGSample.GetCSSValue">
          	<methods>
          		<include name="getCSSBgColor"/> 
          		<include name="getCSSColor"/> 
  				<include name="compareLocation"/>  
- 				
+ 				<include name="getAttribute"/>  
+         		<include name="getTagName"/>
+         		<include name="getSize"/>
+         		<include name="enDisSel"/>
+         	
+         	</methods>
+         </class>  -->
+         <class name="com.obsqura.TestNGSample.FormSubmit">
+         	<methods>
+         		<include name="subForm"/> 
          	</methods>
          </class> 
     </classes>

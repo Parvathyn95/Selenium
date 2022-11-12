@@ -1,49 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="49184" started-at="2022-11-10T06:27:51Z" finished-at="2022-11-10T06:28:40Z">
+  <suite name="Suite" duration-ms="31214" started-at="2022-11-12T10:19:06Z" finished-at="2022-11-12T10:19:37Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="49184" started-at="2022-11-10T06:27:51Z" finished-at="2022-11-10T06:28:40Z">
-      <class name="com.obsqura.TestNGSample.GetCSSValue">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@4ac3c60d]" name="initBrowser" is-config="true" duration-ms="24392" started-at="2022-11-10T10:27:51Z" finished-at="2022-11-10T10:28:15Z">
+    <test name="Test" duration-ms="31214" started-at="2022-11-12T10:19:06Z" finished-at="2022-11-12T10:19:37Z">
+      <class name="com.obsqura.TestNGSample.FormSubmit">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.FormSubmit@57fffcd7]" name="initBrowser" is-config="true" duration-ms="28870" started-at="2022-11-12T14:19:06Z" finished-at="2022-11-12T14:19:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="getCSSBgColor()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@4ac3c60d]" name="getCSSBgColor" duration-ms="27" started-at="2022-11-10T10:28:15Z" finished-at="2022-11-10T10:28:15Z">
+        <test-method status="PASS" signature="subForm()[pri:0, instance:com.obsqura.TestNGSample.FormSubmit@57fffcd7]" name="subForm" duration-ms="1368" started-at="2022-11-12T14:19:35Z" finished-at="2022-11-12T14:19:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getCSSBgColor -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@4ac3c60d]" name="browserQuit" is-config="true" duration-ms="698" started-at="2022-11-10T10:28:15Z" finished-at="2022-11-10T10:28:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@4ac3c60d]" name="initBrowser" is-config="true" duration-ms="10035" started-at="2022-11-10T10:28:16Z" finished-at="2022-11-10T10:28:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="getCSSColor()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@4ac3c60d]" name="getCSSColor" duration-ms="66" started-at="2022-11-10T10:28:26Z" finished-at="2022-11-10T10:28:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getCSSColor -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@4ac3c60d]" name="browserQuit" is-config="true" duration-ms="794" started-at="2022-11-10T10:28:26Z" finished-at="2022-11-10T10:28:27Z">
+        </test-method> <!-- subForm -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.FormSubmit@57fffcd7]" name="browserQuit" is-config="true" duration-ms="931" started-at="2022-11-12T14:19:36Z" finished-at="2022-11-12T14:19:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@4ac3c60d]" name="initBrowser" is-config="true" duration-ms="12333" started-at="2022-11-10T10:28:27Z" finished-at="2022-11-10T10:28:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="compareLocation()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@4ac3c60d]" name="compareLocation" duration-ms="70" started-at="2022-11-10T10:28:39Z" finished-at="2022-11-10T10:28:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- compareLocation -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@4ac3c60d]" name="browserQuit" is-config="true" duration-ms="732" started-at="2022-11-10T10:28:40Z" finished-at="2022-11-10T10:28:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.TestNGSample.GetCSSValue -->
+      </class> <!-- com.obsqura.TestNGSample.FormSubmit -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

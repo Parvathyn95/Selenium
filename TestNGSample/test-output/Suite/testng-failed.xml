@@ -8,7 +8,6 @@
           <include name="initBrowser"/>
           <include name="getCSSBgColor"/>
           <include name="browserQuit"/>
-          <include name="compareLocationAbv"/>
         </methods>
       </class> <!-- com.obsqura.TestNGSample.GetCSSValue -->
     </classes>
