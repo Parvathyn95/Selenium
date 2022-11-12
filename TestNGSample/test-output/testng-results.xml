@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="31214" started-at="2022-11-12T10:19:06Z" finished-at="2022-11-12T10:19:37Z">
+  <suite name="Suite" duration-ms="9845" started-at="2022-11-12T10:54:41Z" finished-at="2022-11-12T10:54:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="31214" started-at="2022-11-12T10:19:06Z" finished-at="2022-11-12T10:19:37Z">
-      <class name="com.obsqura.TestNGSample.FormSubmit">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.FormSubmit@57fffcd7]" name="initBrowser" is-config="true" duration-ms="28870" started-at="2022-11-12T14:19:06Z" finished-at="2022-11-12T14:19:35Z">
+    <test name="Test" duration-ms="9845" started-at="2022-11-12T10:54:41Z" finished-at="2022-11-12T10:54:51Z">
+      <class name="com.obsqura.TestNGSample.GetCSSValue">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@57fffcd7]" name="initBrowser" is-config="true" duration-ms="8891" started-at="2022-11-12T14:54:41Z" finished-at="2022-11-12T14:54:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="subForm()[pri:0, instance:com.obsqura.TestNGSample.FormSubmit@57fffcd7]" name="subForm" duration-ms="1368" started-at="2022-11-12T14:19:35Z" finished-at="2022-11-12T14:19:36Z">
+        <test-method status="PASS" signature="getSize()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@57fffcd7]" name="getSize" duration-ms="62" started-at="2022-11-12T14:54:50Z" finished-at="2022-11-12T14:54:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- subForm -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.FormSubmit@57fffcd7]" name="browserQuit" is-config="true" duration-ms="931" started-at="2022-11-12T14:19:36Z" finished-at="2022-11-12T14:19:37Z">
+        </test-method> <!-- getSize -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@57fffcd7]" name="browserQuit" is-config="true" duration-ms="838" started-at="2022-11-12T14:54:50Z" finished-at="2022-11-12T14:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.TestNGSample.FormSubmit -->
+      </class> <!-- com.obsqura.TestNGSample.GetCSSValue -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

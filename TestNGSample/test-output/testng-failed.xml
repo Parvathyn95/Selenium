@@ -6,8 +6,8 @@
       <class name="com.obsqura.TestNGSample.GetCSSValue">
         <methods>
           <include name="initBrowser"/>
-          <include name="getCSSBgColor"/>
           <include name="browserQuit"/>
+          <include name="getSize"/>
         </methods>
       </class> <!-- com.obsqura.TestNGSample.GetCSSValue -->
     </classes>

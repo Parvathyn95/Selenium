@@ -52,7 +52,11 @@ public class GetCSSValue extends BaseObs {
 	@Test
 	public void getSize() {
 		Dimension size;
+		String expSize="(136, 38)",actSize;
+		Boolean flag=false;
 		size=driver.findElement(By.xpath("//button[@id='button-one']")).getSize();
+		actSize=String.valueOf(size);
+		Assert.assertEquals(expSize, actSize, "Expected and Actual size are not equal");
 	}
 	@Test
 	public void enDisSel() {
