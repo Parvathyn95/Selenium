@@ -8,9 +8,11 @@ import org.testng.annotations.Test;
 public class WebElementCommands extends BaseObs {
 	@Test
 	public void sendKeysSample(){
-		String inputMessage="Hello Obsqura",outputMessage;
+		String inputMessage="Hello Obsqura",outputMessage,type,expType="text";
 		Boolean flag=false;
 		driver.findElement(By.xpath("(//input[@id='single-input-field'][1])")).sendKeys(inputMessage);
+		type=driver.findElement(By.xpath("(//input[@id='single-input-field'][1])")).getAttribute("type");
+		Assert.assertEquals(expType, type);
 		driver.findElement(By.xpath("//button[@id='button-one'][1]")).click();
 		outputMessage= driver.findElement(By.xpath("//div[@id='message-one']")).getText();
 	//	Your Message : Hello Obsqura  the messages wont be equal so we need to check boolean flag whether true or false  
@@ -39,7 +41,7 @@ public class WebElementCommands extends BaseObs {
 	}
 	@Test
 	public void checkIntString() {
-			String valA="55",valB="Strawberry",actualValue;
+		String valA="55",valB="Strawberry",actualValue;
 		int aVal;
 		Boolean flag=false;
 		driver.findElement(By.xpath("(//input[@id='value-a'])[1]")).sendKeys(valA);

@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class GetCSSValue extends BaseObs {
 	@Test
 	public void getCSSBgColor() {
-		String bgColor, expBgClr="rgba(0, 123, 255, 1)";;
+		String bgColor, expBgClr="rgba(0, 123, 255, 1)";
 		bgColor= driver.findElement(By.xpath("//button[@id='button-one']")).getCssValue("background-color");
 		Assert.assertEquals(expBgClr, bgColor);
 	}
