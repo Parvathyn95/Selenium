@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9845" started-at="2022-11-12T10:54:41Z" finished-at="2022-11-12T10:54:51Z">
+  <suite name="Suite" duration-ms="36" started-at="2022-11-16T11:05:04Z" finished-at="2022-11-16T11:05:04Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="9845" started-at="2022-11-12T10:54:41Z" finished-at="2022-11-12T10:54:51Z">
-      <class name="com.obsqura.TestNGSample.GetCSSValue">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@57fffcd7]" name="initBrowser" is-config="true" duration-ms="8891" started-at="2022-11-12T14:54:41Z" finished-at="2022-11-12T14:54:50Z">
+    <test name="Test" duration-ms="36" started-at="2022-11-16T11:05:04Z" finished-at="2022-11-16T11:05:04Z">
+      <class name="com.obsqura.TestNGSample.AnnotationsSample">
+        <test-method status="PASS" signature="beforeSuiteSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="beforeSuiteSample" is-config="true" duration-ms="11" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="getSize()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@57fffcd7]" name="getSize" duration-ms="62" started-at="2022-11-12T14:54:50Z" finished-at="2022-11-12T14:54:50Z">
+        </test-method> <!-- beforeSuiteSample -->
+        <test-method status="PASS" signature="beforeTestSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="beforeTestSample" is-config="true" duration-ms="1" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getSize -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GetCSSValue@57fffcd7]" name="browserQuit" is-config="true" duration-ms="838" started-at="2022-11-12T14:54:50Z" finished-at="2022-11-12T14:54:51Z">
+        </test-method> <!-- beforeTestSample -->
+        <test-method status="PASS" signature="beforeClassSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="beforeClassSample" is-config="true" duration-ms="0" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.TestNGSample.GetCSSValue -->
+        </test-method> <!-- beforeClassSample -->
+        <test-method status="PASS" signature="beforeMethodSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="beforeMethodSample" is-config="true" duration-ms="1" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodSample -->
+        <test-method status="PASS" signature="testSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="testSample" duration-ms="7" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSample -->
+        <test-method status="PASS" signature="afterClassSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="afterClassSample" is-config="true" duration-ms="1" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassSample -->
+        <test-method status="PASS" signature="afterMethodSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="afterMethodSample" is-config="true" duration-ms="0" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodSample -->
+        <test-method status="PASS" signature="afterTestSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="afterTestSample" is-config="true" duration-ms="1" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestSample -->
+        <test-method status="PASS" signature="afterSuiteSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="afterSuiteSample" is-config="true" duration-ms="0" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuiteSample -->
+      </class> <!-- com.obsqura.TestNGSample.AnnotationsSample -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

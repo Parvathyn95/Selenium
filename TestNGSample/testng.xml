@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
+    	 <class name="com.obsqura.TestNGSample.AnnotationsSample"/>
      <!--  <class name="com.obsqura.TestNGSample.BrowserCommands">
       	<methods>
       		<include name="verifyUrl"/>
@@ -17,13 +18,13 @@
       	</methods>
       </class> -->
       	<!-- 	<class name="com.obsqura.TestNGSample.TestExecutionSpeed"/> -->
-         <class name="com.obsqura.TestNGSample.WebElementCommands">
+        <!--  <class name="com.obsqura.TestNGSample.WebElementCommands">
          	<methods>
          		<include name="sendKeysSample"/> 
-         		<!-- <include name="getTotal"/> 
-         		<include name="checkIntString"/>  -->
+         		<include name="getTotal"/> 
+         		<include name="checkIntString"/> 
          	</methods>
-         </class> 
+         </class>  -->
         <!--  <class name="com.obsqura.TestNGSample.GetCSSValue">
          	<methods>
          		<include name="getCSSBgColor"/> 
@@ -40,6 +41,7 @@
          		<include name="subForm"/> 
          	</methods>
          </class>  -->
+        <!--  <class name="com.obsqura.TestNGSample.FindElementsSample"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
