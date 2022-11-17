@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGSample.DatePickerSelect">
+      <class name="com.obsqura.TestNGSample.RadioButton">
         <methods>
           <include name="initBrowser"/>
-          <include name="datePickSelect"/>
+          <include name="checkMale"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- com.obsqura.TestNGSample.DatePickerSelect -->
+      </class> <!-- com.obsqura.TestNGSample.RadioButton -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

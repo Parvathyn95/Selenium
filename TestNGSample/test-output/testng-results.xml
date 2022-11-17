@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10748" started-at="2022-11-17T08:39:17Z" finished-at="2022-11-17T08:39:28Z">
+  <suite name="Suite" duration-ms="9565" started-at="2022-11-17T11:48:08Z" finished-at="2022-11-17T11:48:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="10748" started-at="2022-11-17T08:39:17Z" finished-at="2022-11-17T08:39:28Z">
-      <class name="com.obsqura.TestNGSample.DatePickerSelect">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.DatePickerSelect@f6c48ac]" name="initBrowser" is-config="true" duration-ms="7460" started-at="2022-11-17T12:39:17Z" finished-at="2022-11-17T12:39:24Z">
+    <test name="Test" duration-ms="9565" started-at="2022-11-17T11:48:08Z" finished-at="2022-11-17T11:48:18Z">
+      <class name="com.obsqura.TestNGSample.RadioButton">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.RadioButton@57fffcd7]" name="initBrowser" is-config="true" duration-ms="7603" started-at="2022-11-17T15:48:08Z" finished-at="2022-11-17T15:48:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="datePickSelect()[pri:0, instance:com.obsqura.TestNGSample.DatePickerSelect@f6c48ac]" name="datePickSelect" duration-ms="2451" started-at="2022-11-17T12:39:24Z" finished-at="2022-11-17T12:39:27Z">
+        <test-method status="PASS" signature="checkFemale()[pri:0, instance:com.obsqura.TestNGSample.RadioButton@57fffcd7]" name="checkFemale" duration-ms="963" started-at="2022-11-17T15:48:16Z" finished-at="2022-11-17T15:48:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datePickSelect -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.DatePickerSelect@f6c48ac]" name="browserQuit" is-config="true" duration-ms="817" started-at="2022-11-17T12:39:27Z" finished-at="2022-11-17T12:39:28Z">
+        </test-method> <!-- checkFemale -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.RadioButton@57fffcd7]" name="browserQuit" is-config="true" duration-ms="968" started-at="2022-11-17T15:48:17Z" finished-at="2022-11-17T15:48:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.TestNGSample.DatePickerSelect -->
+      </class> <!-- com.obsqura.TestNGSample.RadioButton -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

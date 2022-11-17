@@ -41,8 +41,14 @@
          	</methods>
          </class>  -->
         <!--  <class name="com.obsqura.TestNGSample.FindElementsSample"/> -->
-       	 <class name="com.obsqura.TestNGSample.DatePickerSelect"/>  	 
-       	<!--  <class name="com.obsqura.TestNGSample.RadioButton"/> -->
+       	 <!-- <class name="com.obsqura.TestNGSample.DatePickerSelect"/>   -->	 
+       	 <class name="com.obsqura.TestNGSample.RadioButton">
+       	 	<methods>
+       	 		<!-- <include name="radioButton"/> -->
+       	 		<!-- <include name="checkMale"/> -->
+       	 		<include name="checkFemale"/>
+       	 	</methods>
+       	 </class>
      <!--    <class name="com.obsqura.TestNGSample.AnnotationsSample"/>
         <class name="com.obsqura.TestNGSample.AnnotationExample"/> -->
     </classes>
