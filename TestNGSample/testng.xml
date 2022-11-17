@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-    	 <class name="com.obsqura.TestNGSample.AnnotationsSample"/>
      <!--  <class name="com.obsqura.TestNGSample.BrowserCommands">
       	<methods>
       		<include name="verifyUrl"/>
@@ -42,6 +41,9 @@
          	</methods>
          </class>  -->
         <!--  <class name="com.obsqura.TestNGSample.FindElementsSample"/> -->
+       	 <class name="com.obsqura.TestNGSample.DatePickerSelect"/>
+     <!--    <class name="com.obsqura.TestNGSample.AnnotationsSample"/>
+        <class name="com.obsqura.TestNGSample.AnnotationExample"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

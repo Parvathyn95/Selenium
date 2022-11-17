@@ -2,48 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="36" started-at="2022-11-16T11:05:04Z" finished-at="2022-11-16T11:05:04Z">
+  <suite name="Suite" duration-ms="11665" started-at="2022-11-17T08:15:24Z" finished-at="2022-11-17T08:15:36Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="36" started-at="2022-11-16T11:05:04Z" finished-at="2022-11-16T11:05:04Z">
-      <class name="com.obsqura.TestNGSample.AnnotationsSample">
-        <test-method status="PASS" signature="beforeSuiteSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="beforeSuiteSample" is-config="true" duration-ms="11" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
+    <test name="Test" duration-ms="11665" started-at="2022-11-17T08:15:24Z" finished-at="2022-11-17T08:15:36Z">
+      <class name="com.obsqura.TestNGSample.DatePickerSelect">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.DatePickerSelect@f6c48ac]" name="initBrowser" is-config="true" duration-ms="8865" started-at="2022-11-17T12:15:24Z" finished-at="2022-11-17T12:15:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuiteSample -->
-        <test-method status="PASS" signature="beforeTestSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="beforeTestSample" is-config="true" duration-ms="1" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="datePickSelect()[pri:0, instance:com.obsqura.TestNGSample.DatePickerSelect@f6c48ac]" name="datePickSelect" duration-ms="1923" started-at="2022-11-17T12:15:33Z" finished-at="2022-11-17T12:15:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTestSample -->
-        <test-method status="PASS" signature="beforeClassSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="beforeClassSample" is-config="true" duration-ms="0" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
+        </test-method> <!-- datePickSelect -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.DatePickerSelect@f6c48ac]" name="browserQuit" is-config="true" duration-ms="846" started-at="2022-11-17T12:15:35Z" finished-at="2022-11-17T12:15:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClassSample -->
-        <test-method status="PASS" signature="beforeMethodSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="beforeMethodSample" is-config="true" duration-ms="1" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethodSample -->
-        <test-method status="PASS" signature="testSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="testSample" duration-ms="7" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSample -->
-        <test-method status="PASS" signature="afterClassSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="afterClassSample" is-config="true" duration-ms="1" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClassSample -->
-        <test-method status="PASS" signature="afterMethodSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="afterMethodSample" is-config="true" duration-ms="0" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethodSample -->
-        <test-method status="PASS" signature="afterTestSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="afterTestSample" is-config="true" duration-ms="1" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTestSample -->
-        <test-method status="PASS" signature="afterSuiteSample()[pri:0, instance:com.obsqura.TestNGSample.AnnotationsSample@4dfa3a9d]" name="afterSuiteSample" is-config="true" duration-ms="0" started-at="2022-11-16T15:05:04Z" finished-at="2022-11-16T15:05:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuiteSample -->
-      </class> <!-- com.obsqura.TestNGSample.AnnotationsSample -->
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.TestNGSample.DatePickerSelect -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
