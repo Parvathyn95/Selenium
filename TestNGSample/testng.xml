@@ -42,13 +42,24 @@
          </class>  -->
         <!--  <class name="com.obsqura.TestNGSample.FindElementsSample"/> -->
        	 <!-- <class name="com.obsqura.TestNGSample.DatePickerSelect"/>   -->	 
-       	 <class name="com.obsqura.TestNGSample.RadioButton">
-       	 	<methods>
-       	 		<!-- <include name="radioButton"/> -->
-       	 		<!-- <include name="checkMale"/> -->
-       	 		<include name="checkFemale"/>
+       	 <class name="com.obsqura.TestNGSample.GroupRadioButton"/>
+       	 <!-- 	<methods>
+       	 		<include name="patientGenderCheck"/>
+       	 		<include name="patientAgGroupCheck"/>
+       	 		<include name="patientMaleOnly"/>
+       	 		<include name="patientFemaleOnly"/>
+       	 		<include name="firstAgeGroupOnly"/>
+       	 		<include name="secondAgeGroupOnly"/>
+       	 		<include name="thirdAgeGroupOnly"/>
+       	 		<include name="maleFirstAgeGroupOnly"/>
+       	 		<include name="maleSecondAgeGroupOnly"/>
+       	 		<include name="maleThirdAgeGroupOnly"/>
+       	 		<include name="femaleFirstAgeGroupOnly"/>
+       	 		<include name="femaleSecondAgeGroupOnly"/>
+       	 		<include name="femaleThirdAgeGroupOnly"/>	
        	 	</methods>
-       	 </class>
+       	 </class> -->
+	<!-- <class name="com.obsqura.TestNGSample.CheckBoxSample"/> -->
      <!--    <class name="com.obsqura.TestNGSample.AnnotationsSample"/>
         <class name="com.obsqura.TestNGSample.AnnotationExample"/> -->
     </classes>

@@ -1,25 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9565" started-at="2022-11-17T11:48:08Z" finished-at="2022-11-17T11:48:18Z">
+  <suite name="Suite" duration-ms="87389" started-at="2022-11-18T13:05:09Z" finished-at="2022-11-18T13:06:36Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="9565" started-at="2022-11-17T11:48:08Z" finished-at="2022-11-17T11:48:18Z">
-      <class name="com.obsqura.TestNGSample.RadioButton">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.RadioButton@57fffcd7]" name="initBrowser" is-config="true" duration-ms="7603" started-at="2022-11-17T15:48:08Z" finished-at="2022-11-17T15:48:16Z">
+    <test name="Test" duration-ms="87389" started-at="2022-11-18T13:05:09Z" finished-at="2022-11-18T13:06:36Z">
+      <class name="com.obsqura.TestNGSample.GroupRadioButton">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="6445" started-at="2022-11-18T17:05:09Z" finished-at="2022-11-18T17:05:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="checkFemale()[pri:0, instance:com.obsqura.TestNGSample.RadioButton@57fffcd7]" name="checkFemale" duration-ms="963" started-at="2022-11-17T15:48:16Z" finished-at="2022-11-17T15:48:17Z">
+        <test-method status="PASS" signature="femaleFirstAgeGroupOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="femaleFirstAgeGroupOnly" duration-ms="615" started-at="2022-11-18T17:05:15Z" description="Female selected, agegroup first selection, message check" finished-at="2022-11-18T17:05:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkFemale -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.RadioButton@57fffcd7]" name="browserQuit" is-config="true" duration-ms="968" started-at="2022-11-17T15:48:17Z" finished-at="2022-11-17T15:48:18Z">
+        </test-method> <!-- femaleFirstAgeGroupOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="823" started-at="2022-11-18T17:05:16Z" finished-at="2022-11-18T17:05:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.TestNGSample.RadioButton -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="4600" started-at="2022-11-18T17:05:16Z" finished-at="2022-11-18T17:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="femaleSecondAgeGroupOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="femaleSecondAgeGroupOnly" duration-ms="744" started-at="2022-11-18T17:05:21Z" description="Female selected, agegroup second selection, message check" finished-at="2022-11-18T17:05:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- femaleSecondAgeGroupOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="909" started-at="2022-11-18T17:05:22Z" finished-at="2022-11-18T17:05:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="4596" started-at="2022-11-18T17:05:23Z" finished-at="2022-11-18T17:05:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="femaleThirdAgeGroupOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="femaleThirdAgeGroupOnly" duration-ms="954" started-at="2022-11-18T17:05:27Z" description="Female selected, agegroup third selection, message check" finished-at="2022-11-18T17:05:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- femaleThirdAgeGroupOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="885" started-at="2022-11-18T17:05:28Z" finished-at="2022-11-18T17:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="7222" started-at="2022-11-18T17:05:29Z" finished-at="2022-11-18T17:05:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="firstAgeGroupOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="firstAgeGroupOnly" duration-ms="653" started-at="2022-11-18T17:05:36Z" description="Gender not selected, agegroup first selection, message check" finished-at="2022-11-18T17:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstAgeGroupOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="833" started-at="2022-11-18T17:05:37Z" finished-at="2022-11-18T17:05:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="4586" started-at="2022-11-18T17:05:38Z" finished-at="2022-11-18T17:05:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="maleFirstAgeGroupOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="maleFirstAgeGroupOnly" duration-ms="871" started-at="2022-11-18T17:05:42Z" description="Male selected, agegroup first selection, message check" finished-at="2022-11-18T17:05:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maleFirstAgeGroupOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="831" started-at="2022-11-18T17:05:43Z" finished-at="2022-11-18T17:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="5653" started-at="2022-11-18T17:05:44Z" finished-at="2022-11-18T17:05:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="maleSecondAgeGroupOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="maleSecondAgeGroupOnly" duration-ms="840" started-at="2022-11-18T17:05:50Z" description="Male selected, agegroup second selection, message check" finished-at="2022-11-18T17:05:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maleSecondAgeGroupOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="833" started-at="2022-11-18T17:05:51Z" finished-at="2022-11-18T17:05:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="4703" started-at="2022-11-18T17:05:51Z" finished-at="2022-11-18T17:05:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="maleThirdAgeGroupOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="maleThirdAgeGroupOnly" duration-ms="891" started-at="2022-11-18T17:05:56Z" description="Male selected, agegroup third selection, message check" finished-at="2022-11-18T17:05:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maleThirdAgeGroupOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="907" started-at="2022-11-18T17:05:57Z" finished-at="2022-11-18T17:05:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="4853" started-at="2022-11-18T17:05:58Z" finished-at="2022-11-18T17:06:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="patientAgGroupCheck()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="patientAgGroupCheck" duration-ms="787" started-at="2022-11-18T17:06:03Z" description="AgeGroup radio button disabled, Get results clicked, Message compared" finished-at="2022-11-18T17:06:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patientAgGroupCheck -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="873" started-at="2022-11-18T17:06:04Z" finished-at="2022-11-18T17:06:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="4650" started-at="2022-11-18T17:06:04Z" finished-at="2022-11-18T17:06:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="patientFemaleOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="patientFemaleOnly" duration-ms="645" started-at="2022-11-18T17:06:09Z" description="Female is selected, agegroup no selection, message check" finished-at="2022-11-18T17:06:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patientFemaleOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="933" started-at="2022-11-18T17:06:10Z" finished-at="2022-11-18T17:06:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="4974" started-at="2022-11-18T17:06:11Z" finished-at="2022-11-18T17:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="patientGenderCheck()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="patientGenderCheck" duration-ms="667" started-at="2022-11-18T17:06:16Z" description="Gender radio button disabled, Get results clicked, Message compared" finished-at="2022-11-18T17:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patientGenderCheck -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="860" started-at="2022-11-18T17:06:16Z" finished-at="2022-11-18T17:06:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="4536" started-at="2022-11-18T17:06:17Z" finished-at="2022-11-18T17:06:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="patientMaleOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="patientMaleOnly" duration-ms="804" started-at="2022-11-18T17:06:22Z" description="Male is selected, agegroup no selection, message check" finished-at="2022-11-18T17:06:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patientMaleOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="934" started-at="2022-11-18T17:06:23Z" finished-at="2022-11-18T17:06:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="4501" started-at="2022-11-18T17:06:23Z" finished-at="2022-11-18T17:06:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="secondAgeGroupOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="secondAgeGroupOnly" duration-ms="667" started-at="2022-11-18T17:06:28Z" description="Gender not selected, agegroup second selection, message check" finished-at="2022-11-18T17:06:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondAgeGroupOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="973" started-at="2022-11-18T17:06:29Z" finished-at="2022-11-18T17:06:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="initBrowser" is-config="true" duration-ms="4546" started-at="2022-11-18T17:06:30Z" finished-at="2022-11-18T17:06:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="thirdAgeGroupOnly()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="thirdAgeGroupOnly" duration-ms="832" started-at="2022-11-18T17:06:34Z" description="Gender not selected, agegroup third selection, message check" finished-at="2022-11-18T17:06:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdAgeGroupOnly -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.GroupRadioButton@13deb50e]" name="browserQuit" is-config="true" duration-ms="921" started-at="2022-11-18T17:06:35Z" finished-at="2022-11-18T17:06:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.TestNGSample.GroupRadioButton -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
