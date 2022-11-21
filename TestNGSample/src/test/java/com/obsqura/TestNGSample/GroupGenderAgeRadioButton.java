@@ -13,7 +13,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 	public void patientGenderAgeGroupCheck() {
 		String expectedTitle1="Pateints Gender",actualTitle1,expectedTitle2="Pateints Age Group",actualTitle2;
 		String expectedMessage="Gender :\nAge group:",actualMessage;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,getResultIsSelected,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -27,6 +27,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 		actualTitle1=driver.findElement(By.xpath("//h4[text()='Pateints Gender']")).getText();
 		Assert.assertEquals(actualTitle1, expectedTitle1);
@@ -35,11 +36,15 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		if(male.isDisplayed()&&female.isDisplayed()&&age1.isDisplayed()&&age2.isDisplayed()&&age3.isDisplayed()){
 				if(maleIsSelected==false&&femaleIsSelected==false&&age1IsSelected==false&&age2IsSelected==false&&age3IsSelected==false){
 					msgFlag=true;
-						if(getResultIsEnabled==true){
-							msgFlag=true;
-							getResult.click();
-							actualMessage=driver.findElement(By.xpath("//div[@id='message-two']")).getText();
-							Assert.assertEquals(actualMessage, expectedMessage);
+						if(getResultIsEnabled==true) {
+						  msgFlag=true;
+							if(getResultIsSelected==false){
+								msgFlag=true;
+								getResult.click();
+								actualMessage=driver.findElement(By.xpath("//div[@id='message-two']")).getText();
+								Assert.assertEquals(actualMessage, expectedMessage);
+						   }
+							Assert.assertTrue(msgFlag,"Get Results button is already selected");
 						}
 						Assert.assertTrue(msgFlag,"Get Results button is disabled");
 				}
@@ -58,7 +63,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 	@Test(description="Male radio button selected no age group selected, Get results clicked, Message compared")
 	public void patientMaleCheck() {
 		String expectedMessage="Gender : Male\nAge group:",inputGenderLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,getResultIsSelected,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -72,18 +77,22 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==true&&femaleIsSelected==false&&age1IsSelected==false&&age2IsSelected==false&&age3IsSelected==false){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
 							msgFlag=true;
-							getResult.click();
-							inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio11']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group:");
-
-						}
-						Assert.assertTrue(msgFlag,"Get Results button is disabled");
-				}
+							 if(getResultIsSelected==false){
+								msgFlag=true;
+							    getResult.click();
+							    inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio11']")).getText();
+							    Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group:");
+						   }
+						Assert.assertTrue(msgFlag,"Get Results button is already selected");
+					}
+					Assert.assertTrue(msgFlag,"Get Results button is disabled");
+			}
 				softAssert.assertTrue(msgFlag,"Male Radio Button is not selected");
 				softAssert.assertTrue(msgFlag,"Female Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
@@ -93,7 +102,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 	@Test(description="Female radio button selected no age group selected, Get results clicked, Message compared")
 	public void patientFemaleCheck() {
 		String expectedMessage="Gender : Female\nAge group:",inputGenderLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsSelected,getResultIsEnabled,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -107,18 +116,22 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==false&&femaleIsSelected==true&&age1IsSelected==false&&age2IsSelected==false&&age3IsSelected==false){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
 							msgFlag=true;
-							getResult.click();
-							inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio21']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group:");
-
-						}
-						Assert.assertTrue(msgFlag,"Get Results button is disabled");
-				}
+							 if(getResultIsSelected==false){
+								msgFlag=true;
+							    getResult.click();
+							    inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio21']")).getText();
+							    Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group:");
+						   }
+						Assert.assertTrue(msgFlag,"Get Results button is already selected");
+					}
+					Assert.assertTrue(msgFlag,"Get Results button is disabled");
+			}
 				softAssert.assertTrue(msgFlag,"Male Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Female Radio Button is not selected");
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
@@ -128,7 +141,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 	@Test(description="Age1 radio button selected no gender selected, Get results clicked, Message compared")
 	public void patientAge1Check() {
 		String expectedMessage="Gender :\nAge group: 1 to 18",inputAgeLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsSelected,getResultIsEnabled,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -142,28 +155,32 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==false&&femaleIsSelected==false&&age1IsSelected==true&&age2IsSelected==false&&age3IsSelected==false){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
 							msgFlag=true;
-							getResult.click();
-							inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio22']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputAgeLabel+"\nAge group:");
-
-						}
-						Assert.assertTrue(msgFlag,"Get Results button is disabled");
-				}
+							 if(getResultIsSelected==false){
+								msgFlag=true;
+							    getResult.click();
+							    inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio22']")).getText();
+							    Assert.assertEquals(expectedMessage, "Gender : "+inputAgeLabel+"\nAge group:");
+							   }
+								Assert.assertTrue(msgFlag,"Get Results button is already selected");
+							}
+							Assert.assertTrue(msgFlag,"Get Results button is disabled");
+					}
 				softAssert.assertTrue(msgFlag,"Male Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Female Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is not selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
-	}
+		}
 	@Test(description="Age2 radio button selected no gender selected, Get results clicked, Message compared")
 	public void patientAge2Check() {
 		String expectedMessage="Gender :\nAge group: 19 t0 44",inputAgeLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsSelected,getResultIsEnabled,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -177,15 +194,17 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==false&&femaleIsSelected==false&&age1IsSelected==false&&age2IsSelected==true&&age3IsSelected==false){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
 							msgFlag=true;
-							getResult.click();
-							inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio23']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputAgeLabel+"\nAge group:");
-
+							if(getResultIsSelected==false){
+								msgFlag=true;
+							    getResult.click();
+							    inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio23']")).getText();
+							    Assert.assertEquals(expectedMessage, "Gender : "+inputAgeLabel+"\nAge group:");
 						}
 						Assert.assertTrue(msgFlag,"Get Results button is disabled");
 				}
@@ -194,11 +213,12 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is not selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
+	     }
 	}
 	@Test(description="Age3 radio button selected no gender selected, Get results clicked, Message compared")
 	public void patientAge3Check() {
 		String expectedMessage="Gender :\nAge group: 45 to 60",inputAgeLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsSelected,getResultIsEnabled,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -212,15 +232,19 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==false&&femaleIsSelected==false&&age1IsSelected==false&&age2IsSelected==false&&age3IsSelected==true){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
-							msgFlag=true;
-							getResult.click();
-							inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio24']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputAgeLabel+"\nAge group:");
-
+						  msgFlag=true;
+							if(getResultIsSelected==false){
+								msgFlag=true;
+								getResult.click();
+								inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio24']")).getText();
+								Assert.assertEquals(expectedMessage, "Gender : "+inputAgeLabel+"\nAge group:");
+							   }
+							Assert.assertTrue(msgFlag,"Get Results button is already selected");
 						}
 						Assert.assertTrue(msgFlag,"Get Results button is disabled");
 				}
@@ -233,7 +257,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 	@Test(description="Male and Age1 radio button selected, Get results clicked, Message compared")
 	public void patientMaleAge1Check() {
 		String expectedMessage="Gender : Male\nAge group: 1 to 18",inputGenderLabel,inputAgeLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsSelected,getResultIsEnabled,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -247,15 +271,20 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==true&&femaleIsSelected==false&&age1IsSelected==true&&age2IsSelected==false&&age3IsSelected==false){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
-							msgFlag=true;
-							getResult.click();
-							inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio11']")).getText();
-							inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio22']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
+						  msgFlag=true;
+						    if(getResultIsSelected==false){
+								msgFlag=true;
+								getResult.click();
+								inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio11']")).getText();
+								inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio22']")).getText();
+								Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
+							   }
+							Assert.assertTrue(msgFlag,"Get Results button is already selected");
 						}
 						Assert.assertTrue(msgFlag,"Get Results button is disabled");
 				}
@@ -268,7 +297,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 	@Test(description="Male and Age2 radio button selected, Get results clicked, Message compared")
 	public void patientMaleAge2Check() {
 		String expectedMessage="Gender : Male\nAge group: 19 t0 44",inputGenderLabel,inputAgeLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsSelected,getResultIsEnabled,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -282,16 +311,20 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==true&&femaleIsSelected==false&&age1IsSelected==false&&age2IsSelected==true&&age3IsSelected==false){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
-							msgFlag=true;
-							getResult.click();
-							inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio11']")).getText();
-							inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio23']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
-
+						   msgFlag=true;
+							if(getResultIsSelected==false){
+								msgFlag=true;
+								getResult.click();
+								inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio11']")).getText();
+								inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio23']")).getText();
+								Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
+							   }
+							Assert.assertTrue(msgFlag,"Get Results button is already selected");
 						}
 						Assert.assertTrue(msgFlag,"Get Results button is disabled");
 				}
@@ -304,7 +337,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 	@Test(description="Male and Age3 radio button selected, Get results clicked, Message compared")
 	public void patientMaleAge3Check() {
 		String expectedMessage="Gender : Male\nAge group: 45 to 60",inputGenderLabel,inputAgeLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsSelected,getResultIsEnabled,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -318,16 +351,20 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==true&&femaleIsSelected==false&&age1IsSelected==false&&age2IsSelected==false&&age3IsSelected==true){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
-							msgFlag=true;
-							getResult.click();
-							inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio11']")).getText();
-							inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio24']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
-
+						  msgFlag=true;
+							if(getResultIsSelected==false){
+								msgFlag=true;
+								getResult.click();
+								inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio11']")).getText();
+								inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio24']")).getText();
+								Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
+							  }
+							Assert.assertTrue(msgFlag,"Get Results button is already selected");
 						}
 						Assert.assertTrue(msgFlag,"Get Results button is disabled");
 				}
@@ -340,7 +377,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 	@Test(description="Female and Age1 radio button selected, Get results clicked, Message compared")
 	public void patientFemaleAge1Check() {
 		String expectedMessage="Gender : Female\nAge group: 1 to 18",inputGenderLabel,inputAgeLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsSelected,getResultIsEnabled,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -354,16 +391,20 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==false&&femaleIsSelected==true&&age1IsSelected==true&&age2IsSelected==false&&age3IsSelected==false){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
-							msgFlag=true;
-							getResult.click();
-							inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio21']")).getText();
-							inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio22']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
-
+						  msgFlag=true;
+							if(getResultIsSelected==false){
+								msgFlag=true;
+								getResult.click();
+								inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio21']")).getText();
+								inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio22']")).getText();
+								Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
+							  }
+							Assert.assertTrue(msgFlag,"Get Results button is already selected");
 						}
 						Assert.assertTrue(msgFlag,"Get Results button is disabled");
 				}
@@ -376,7 +417,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 	@Test(description="Female and Age2 radio button selected, Get results clicked, Message compared")
 	public void patientFemaleAge2Check() {
 		String expectedMessage="Gender : Female\nAge group: 19 t0 44",inputGenderLabel,inputAgeLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsSelected,getResultIsEnabled,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -390,16 +431,20 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==false&&femaleIsSelected==true&&age1IsSelected==false&&age2IsSelected==true&&age3IsSelected==false){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
-							msgFlag=true;
-							getResult.click();
-							inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio21']")).getText();
-							inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio23']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
-
+						  msgFlag=true;
+							if(getResultIsSelected==false){
+								msgFlag=true;
+								getResult.click();
+								inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio21']")).getText();
+								inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio23']")).getText();
+								Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
+							  }
+							Assert.assertTrue(msgFlag,"Get Results button is already selected");
 						}
 						Assert.assertTrue(msgFlag,"Get Results button is disabled");
 				}
@@ -412,7 +457,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 	@Test(description="Female and Age3 radio button selected, Get results clicked, Message compared")
 	public void patientFemaleAge3Check() {
 		String expectedMessage="Gender : Female\nAge group: 45 to 60",inputGenderLabel,inputAgeLabel;
-		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsEnabled,msgFlag=false;
+		Boolean maleIsSelected,femaleIsSelected,age1IsSelected,age2IsSelected,age3IsSelected,getResultIsSelected,getResultIsEnabled,msgFlag=false;
 		SoftAssert softAssert = new SoftAssert();
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
 		WebElement male = driver.findElement(By.xpath("//input[@id='inlineRadio11']"));
@@ -426,16 +471,20 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 		age1IsSelected=age1.isSelected();
 		age2IsSelected=age2.isSelected();
 		age3IsSelected=age3.isSelected();
+		getResultIsSelected=getResult.isSelected();
 		getResultIsEnabled=getResult.isEnabled();
 				if(maleIsSelected==false&&femaleIsSelected==true&&age1IsSelected==false&&age2IsSelected==false&&age3IsSelected==true){
 					msgFlag=true;
 						if(getResultIsEnabled==true){
-							msgFlag=true;
-							getResult.click();
-							inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio21']")).getText();
-							inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio24']")).getText();
-							Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
-
+						  msgFlag=true;
+							if(getResultIsSelected==false){
+								msgFlag=true;
+								getResult.click();
+								inputGenderLabel=driver.findElement(By.xpath("//label[@for='inlineRadio21']")).getText();
+								inputAgeLabel=driver.findElement(By.xpath("//label[@for='inlineRadio24']")).getText();
+								Assert.assertEquals(expectedMessage, "Gender : "+inputGenderLabel+"\nAge group: "+inputAgeLabel);
+							  }
+							Assert.assertTrue(msgFlag,"Get Results button is already selected");
 						}
 						Assert.assertTrue(msgFlag,"Get Results button is disabled");
 				}
