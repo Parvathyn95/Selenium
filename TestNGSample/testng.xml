@@ -43,8 +43,8 @@
         <!--  <class name="com.obsqura.TestNGSample.FindElementsSample"/> -->
        	 <!-- <class name="com.obsqura.TestNGSample.DatePickerSelect"/>   -->	 
        	<!--  <class name="com.obsqura.TestNGSample.SelectFromDropdown"/> -->
-       	  <class name="com.obsqura.TestNGSample.GroupGenderAgeRadioButton"/>
-       	
+       	 <!--  <class name="com.obsqura.TestNGSample.GroupGenderAgeRadioButton"/> -->
+       	<class name="com.obsqura.TestNGSample.Guru99SiteRadioButton"/>
        	 	<!-- <methods>
        	 		<include name="patientGenderCheck"/>
        	 		<include name="patientAgeGroupCheck"/>
