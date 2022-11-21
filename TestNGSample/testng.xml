@@ -42,10 +42,12 @@
          </class>  -->
         <!--  <class name="com.obsqura.TestNGSample.FindElementsSample"/> -->
        	 <!-- <class name="com.obsqura.TestNGSample.DatePickerSelect"/>   -->	 
-       	 <class name="com.obsqura.TestNGSample.GroupRadioButton"/>
-       	 <!-- 	<methods>
+       	<!--  <class name="com.obsqura.TestNGSample.SelectFromDropdown"/> -->
+       	  <class name="com.obsqura.TestNGSample.GroupGenderAgeRadioButton"/>
+       	
+       	 	<!-- <methods>
        	 		<include name="patientGenderCheck"/>
-       	 		<include name="patientAgGroupCheck"/>
+       	 		<include name="patientAgeGroupCheck"/>
        	 		<include name="patientMaleOnly"/>
        	 		<include name="patientFemaleOnly"/>
        	 		<include name="firstAgeGroupOnly"/>
@@ -59,9 +61,16 @@
        	 		<include name="femaleThirdAgeGroupOnly"/>	
        	 	</methods>
        	 </class> -->
-	<!-- <class name="com.obsqura.TestNGSample.CheckBoxSample"/> -->
-     <!--    <class name="com.obsqura.TestNGSample.AnnotationsSample"/>
-        <class name="com.obsqura.TestNGSample.AnnotationExample"/> -->
+     <!--   	 <class name="com.obsqura.TestNGSample.GroupRadioFindElements">
+       	 <methods>
+       	 		<include name="patientGenderCheck"/>
+       	 		<include name="patientOnlyGenderCheck"/>
+       	 	</methods>
+       	 </class>
+	<class name="com.obsqura.TestNGSample.CheckBoxSample"/>
+        <class name="com.obsqura.TestNGSample.AnnotationsSample"/> -->
+ 
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+
+  	</test><!-- Test -->
+   </suite><!-- Suite -->

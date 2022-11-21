@@ -34,7 +34,7 @@ public class GroupRadioButton extends BaseObs {
 		Assert.assertTrue(msgFlag, "Radio button is already selected");
 	}
 	@Test(description="AgeGroup radio button disabled, Get results clicked, Message compared")
-	public void patientAgGroupCheck() {
+	public void patientAgeGroupCheck() {
 		String expText="Pateints Age Group",actText,actMsg,expMsg="Gender :\nAge group:";
 		Boolean sel1,sel2,sel3,getSel,msgFlag=false;
 		driver.navigate().to("https://selenium.obsqurazone.com/radio-button-demo.php");
