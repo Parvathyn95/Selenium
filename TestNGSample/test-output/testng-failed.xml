@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGSample.SelectFromDropdown">
+      <class name="com.obsqura.TestNGSample.MultipleCheckboxDemo">
         <methods>
-          <include name="selectByIndex"/>
+          <include name="multipleCheckboxSample"/>
           <include name="initBrowser"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- com.obsqura.TestNGSample.SelectFromDropdown -->
+      </class> <!-- com.obsqura.TestNGSample.MultipleCheckboxDemo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

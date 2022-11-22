@@ -50,12 +50,14 @@
        	  		<include name="patientGenderAgeGroupCheck"/>
        	  	</methods>
        	  </class> -->
-       	  <class name="com.obsqura.TestNGSample.SelectFromDropdown">
+       	  <!-- <class name="com.obsqura.TestNGSample.SelectFromDropdown">
        	  	<methods>
        	  		<include name="elementCount"/>
        	  	</methods>
-       	  </class>
-       	<!-- <class name="com.obsqura.TestNGSample.Guru99SiteRadioButton"/> -->
+       	  </class> -->
+       	<!--   <class name="com.obsqura.TestNGSample.SeleniumFlavourCheckbox"/> -->
+       	  <class name="com.obsqura.TestNGSample.MultipleCheckboxDemo"/>
+       <!-- 	<class name="com.obsqura.TestNGSample.Guru99SiteRadioButton"/> -->
        	 	<!-- <methods>
        	 		<include name="patientGenderCheck"/>
        	 		<include name="patientAgeGroupCheck"/>

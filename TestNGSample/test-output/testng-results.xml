@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8966" started-at="2022-11-22T05:21:44Z" finished-at="2022-11-22T05:21:53Z">
+  <suite name="Suite" duration-ms="10405" started-at="2022-11-22T16:52:53Z" finished-at="2022-11-22T16:53:03Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8966" started-at="2022-11-22T05:21:44Z" finished-at="2022-11-22T05:21:53Z">
-      <class name="com.obsqura.TestNGSample.SelectFromDropdown">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.SelectFromDropdown@57fffcd7]" name="initBrowser" is-config="true" duration-ms="7654" started-at="2022-11-22T09:21:44Z" finished-at="2022-11-22T09:21:51Z">
+    <test name="Test" duration-ms="10405" started-at="2022-11-22T16:52:53Z" finished-at="2022-11-22T16:53:03Z">
+      <class name="com.obsqura.TestNGSample.MultipleCheckboxDemo">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.MultipleCheckboxDemo@f6c48ac]" name="initBrowser" is-config="true" duration-ms="8396" started-at="2022-11-22T20:52:53Z" finished-at="2022-11-22T20:53:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="elementCount()[pri:0, instance:com.obsqura.TestNGSample.SelectFromDropdown@57fffcd7]" name="elementCount" duration-ms="468" started-at="2022-11-22T09:21:51Z" finished-at="2022-11-22T09:21:52Z">
+        <test-method status="PASS" signature="multipleCheckboxSample()[pri:0, instance:com.obsqura.TestNGSample.MultipleCheckboxDemo@f6c48ac]" name="multipleCheckboxSample" duration-ms="970" started-at="2022-11-22T20:53:01Z" finished-at="2022-11-22T20:53:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- elementCount -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.SelectFromDropdown@57fffcd7]" name="browserQuit" is-config="true" duration-ms="829" started-at="2022-11-22T09:21:52Z" finished-at="2022-11-22T09:21:53Z">
+        </test-method> <!-- multipleCheckboxSample -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.MultipleCheckboxDemo@f6c48ac]" name="browserQuit" is-config="true" duration-ms="1000" started-at="2022-11-22T20:53:02Z" finished-at="2022-11-22T20:53:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.TestNGSample.SelectFromDropdown -->
+      </class> <!-- com.obsqura.TestNGSample.MultipleCheckboxDemo -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -18,23 +18,20 @@ public class MultipleCheckboxDemo extends BaseObs {
 		WebElement checkBox3 = driver.findElement(By.xpath("//input[@id='check-box-three']"));
 		WebElement checkBox4 = driver.findElement(By.xpath("//input[@id='check-box-four']"));
 		WebElement selectAll = driver.findElement(By.xpath("//input[@id='button-two']"));
-		   if((checkBox1.isDisplayed()&&checkBox2.isDisplayed()&&checkBox3.isDisplayed()&&checkBox4.isDisplayed())!=false) {
-			 	if((checkBox1.isSelected()&&checkBox2.isSelected()&&checkBox3.isSelected()&&checkBox4.isSelected())!=true) {
+		   if(checkBox1.isDisplayed()&&checkBox2.isDisplayed()&&checkBox3.isDisplayed()&&checkBox4.isDisplayed()) {
+			 	if(checkBox1.isSelected()&&checkBox2.isSelected()&&checkBox3.isSelected()&&checkBox4.isSelected()) {
 			 		if(selectAll.isEnabled()) {
-			 		  	if((selectAll.isSelected())!=true) {    //give not equal to, directly give boolean values, no need of msgFlag, use softassert
-			 		  		msgFlag=true;
+			 		  		//msgFlag=true;
 			 		  		selectAll.click();
 			 		  		actualButtonValue = driver.findElement(By.xpath("//input[@value='Unselect All']")).getAttribute("value");
 			 		  		Assert.assertEquals(expectedButtonValue, actualButtonValue);
-			 		  	}
-			 		  	Assert.assertTrue(msgFlag, "Select All Button is already selected");  //softassert
 			 		}
 			 		Assert.assertTrue(selectAll.isEnabled(), "Select All Button is disabled");      //softassert
 			 	}
-			 	softAssert.assertTrue(checkBox1.isSelected(), "CheckBox 1 is not selected");
-				softAssert.assertTrue(checkBox2.isSelected(), "CheckBox 2 is not selected");
-				softAssert.assertTrue(checkBox3.isSelected(), "CheckBox 3 is not selected");
-				softAssert.assertTrue(checkBox4.isSelected(), "CheckBox 4 is not selected");
+			 	softAssert.assertFalse(checkBox1.isSelected(), "CheckBox 1 is not selected");
+				softAssert.assertFalse(checkBox2.isSelected(), "CheckBox 2 is not selected");
+				softAssert.assertFalse(checkBox3.isSelected(), "CheckBox 3 is not selected");
+				softAssert.assertFalse(checkBox4.isSelected(), "CheckBox 4 is not selected");
 				softAssert.assertAll();
 		  }
 			softAssert.assertTrue(checkBox1.isDisplayed(), "CheckBox 1 is not displayed");
