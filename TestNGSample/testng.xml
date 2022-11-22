@@ -55,8 +55,8 @@
        	  		<include name="elementCount"/>
        	  	</methods>
        	  </class> -->
-       	<!--   <class name="com.obsqura.TestNGSample.SeleniumFlavourCheckbox"/> -->
-       	  <class name="com.obsqura.TestNGSample.MultipleCheckboxDemo"/>
+       	  <class name="com.obsqura.TestNGSample.SeleniumFlavourCheckbox"/>
+       	  <!-- <class name="com.obsqura.TestNGSample.MultipleCheckboxDemo"/> -->
        <!-- 	<class name="com.obsqura.TestNGSample.Guru99SiteRadioButton"/> -->
        	 	<!-- <methods>
        	 		<include name="patientGenderCheck"/>

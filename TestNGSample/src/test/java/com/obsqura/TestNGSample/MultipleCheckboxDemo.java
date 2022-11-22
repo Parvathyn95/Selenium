@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class MultipleCheckboxDemo extends BaseObs {
+
 	@Test
 	public void multipleCheckboxSample() {
 		String expectedButtonValue = "Unselect All",actualButtonValue;

@@ -1,25 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10405" started-at="2022-11-22T16:52:53Z" finished-at="2022-11-22T16:53:03Z">
+  <suite name="Suite" duration-ms="184136" started-at="2022-11-22T19:23:47Z" finished-at="2022-11-22T19:26:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="10405" started-at="2022-11-22T16:52:53Z" finished-at="2022-11-22T16:53:03Z">
-      <class name="com.obsqura.TestNGSample.MultipleCheckboxDemo">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.MultipleCheckboxDemo@f6c48ac]" name="initBrowser" is-config="true" duration-ms="8396" started-at="2022-11-22T20:52:53Z" finished-at="2022-11-22T20:53:01Z">
+    <test name="Test" duration-ms="184136" started-at="2022-11-22T19:23:47Z" finished-at="2022-11-22T19:26:51Z">
+      <class name="com.obsqura.TestNGSample.SeleniumFlavourCheckbox">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.SeleniumFlavourCheckbox@f6c48ac]" name="initBrowser" is-config="true" duration-ms="85388" started-at="2022-11-22T23:23:47Z" finished-at="2022-11-22T23:25:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="multipleCheckboxSample()[pri:0, instance:com.obsqura.TestNGSample.MultipleCheckboxDemo@f6c48ac]" name="multipleCheckboxSample" duration-ms="970" started-at="2022-11-22T20:53:01Z" finished-at="2022-11-22T20:53:02Z">
+        <test-method status="FAIL" signature="selectWebdriverCheckbox()[pri:0, instance:com.obsqura.TestNGSample.SeleniumFlavourCheckbox@f6c48ac]" name="selectWebdriverCheckbox" duration-ms="1212" started-at="2022-11-22T23:25:12Z" finished-at="2022-11-22T23:25:14Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (700, 1175)
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-23R50OH', ip: '192.168.0.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7726f828aac0616f62889afbd79385c3, clickElement {id=bb4b66fd-ccfe-43ae-8b0e-ceb7f4043848}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59745}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59745/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (7726f828aac0616f62889afbd79385c3)] -> xpath: //input[@value='Selenium Webdriver']]
+Session ID: 7726f828aac0616f62889afbd79385c3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (700, 1175)
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-23R50OH', ip: '192.168.0.169', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7726f828aac0616f62889afbd79385c3, clickElement {id=bb4b66fd-ccfe-43ae-8b0e-ceb7f4043848}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59745}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59745/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (7726f828aac0616f62889afbd79385c3)] -> xpath: //input[@value='Selenium Webdriver']]
+Session ID: 7726f828aac0616f62889afbd79385c3
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.obsqura.TestNGSample.SeleniumFlavourCheckbox.selectWebdriverCheckbox(SeleniumFlavourCheckbox.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- multipleCheckboxSample -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.MultipleCheckboxDemo@f6c48ac]" name="browserQuit" is-config="true" duration-ms="1000" started-at="2022-11-22T20:53:02Z" finished-at="2022-11-22T20:53:03Z">
+        </test-method> <!-- selectWebdriverCheckbox -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.SeleniumFlavourCheckbox@f6c48ac]" name="browserQuit" is-config="true" duration-ms="954" started-at="2022-11-22T23:25:14Z" finished-at="2022-11-22T23:25:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.TestNGSample.MultipleCheckboxDemo -->
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.SeleniumFlavourCheckbox@f6c48ac]" name="initBrowser" is-config="true" duration-ms="95175" started-at="2022-11-22T23:25:14Z" finished-at="2022-11-22T23:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="seleniumCheckboxSample()[pri:0, instance:com.obsqura.TestNGSample.SeleniumFlavourCheckbox@f6c48ac]" name="seleniumCheckboxSample" duration-ms="392" started-at="2022-11-22T23:26:50Z" finished-at="2022-11-22T23:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleniumCheckboxSample -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.SeleniumFlavourCheckbox@f6c48ac]" name="browserQuit" is-config="true" duration-ms="1000" started-at="2022-11-22T23:26:50Z" finished-at="2022-11-22T23:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- com.obsqura.TestNGSample.SeleniumFlavourCheckbox -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
