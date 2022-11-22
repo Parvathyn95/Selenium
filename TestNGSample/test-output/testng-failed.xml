@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGSample.GroupGenderAgeRadioButton">
+      <class name="com.obsqura.TestNGSample.SelectFromDropdown">
         <methods>
-          <include name="patientGenderCheck"/>
+          <include name="selectByIndex"/>
           <include name="initBrowser"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- com.obsqura.TestNGSample.GroupGenderAgeRadioButton -->
+      </class> <!-- com.obsqura.TestNGSample.SelectFromDropdown -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -53,12 +53,14 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
+				softAssert.assertAll();
 		}
 		softAssert.assertTrue(male.isDisplayed(),"Male Radio Button is not displayed");
 		softAssert.assertTrue(female.isDisplayed(),"Female Radio Button is not displayed");
 		softAssert.assertTrue(age1.isDisplayed(),"Age1 Radio Button is not displayed");
 		softAssert.assertTrue(age2.isDisplayed(),"Age2 Radio Button is not displayed");
 		softAssert.assertTrue(age3.isDisplayed(),"Age3 Radio Button is not displayed");	
+		softAssert.assertAll();
 	}
 	@Test(description="Male radio button selected no age group selected, Get results clicked, Message compared")
 	public void patientMaleCheck() {
@@ -98,6 +100,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
+				softAssert.assertAll();
 	}
 	@Test(description="Female radio button selected no age group selected, Get results clicked, Message compared")
 	public void patientFemaleCheck() {
@@ -137,6 +140,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
+				softAssert.assertAll();
 	}
 	@Test(description="Age1 radio button selected no gender selected, Get results clicked, Message compared")
 	public void patientAge1Check() {
@@ -176,6 +180,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is not selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
+				softAssert.assertAll();	
 		}
 	@Test(description="Age2 radio button selected no gender selected, Get results clicked, Message compared")
 	public void patientAge2Check() {
@@ -213,6 +218,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is not selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
+				softAssert.assertAll();
 	     }
 	}
 	@Test(description="Age3 radio button selected no gender selected, Get results clicked, Message compared")
@@ -253,6 +259,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is not selected");
+				softAssert.assertAll();
 	}
 	@Test(description="Male and Age1 radio button selected, Get results clicked, Message compared")
 	public void patientMaleAge1Check() {
@@ -293,6 +300,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is not selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
+				softAssert.assertAll();
 	}
 	@Test(description="Male and Age2 radio button selected, Get results clicked, Message compared")
 	public void patientMaleAge2Check() {
@@ -333,6 +341,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is not selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
+				softAssert.assertAll();
 	}
 	@Test(description="Male and Age3 radio button selected, Get results clicked, Message compared")
 	public void patientMaleAge3Check() {
@@ -373,6 +382,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is not selected");
+				softAssert.assertAll();
 	}
 	@Test(description="Female and Age1 radio button selected, Get results clicked, Message compared")
 	public void patientFemaleAge1Check() {
@@ -413,6 +423,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is not selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
+				softAssert.assertAll();
 	}
 	@Test(description="Female and Age2 radio button selected, Get results clicked, Message compared")
 	public void patientFemaleAge2Check() {
@@ -453,6 +464,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is not selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is selected");
+				softAssert.assertAll();
 	}
 	@Test(description="Female and Age3 radio button selected, Get results clicked, Message compared")
 	public void patientFemaleAge3Check() {
@@ -493,6 +505,7 @@ public class GroupGenderAgeRadioButton extends BaseObs {
 				softAssert.assertTrue(msgFlag,"Age1 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age2 Radio Button is selected");
 				softAssert.assertTrue(msgFlag,"Age3 Radio Button is not selected");
+				softAssert.assertAll();
 	}	
  }
 

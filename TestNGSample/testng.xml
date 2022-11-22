@@ -40,14 +40,21 @@
          		<include name="subForm"/> 
          	</methods>
          </class>  -->
+        <!--  <class name="com.obsqura.TestNGSample.ContinentDropDown"/> -->
         <!--  <class name="com.obsqura.TestNGSample.FindElementsSample"/> -->
        	 <!-- <class name="com.obsqura.TestNGSample.DatePickerSelect"/>   -->	 
        	<!--  <class name="com.obsqura.TestNGSample.SelectFromDropdown"/> -->
-       	  <class name="com.obsqura.TestNGSample.GroupGenderAgeRadioButton"/>
+       	  <!-- <class name="com.obsqura.TestNGSample.GroupGenderAgeRadioButton"/> -->
+       	 <!--  <class name="com.obsqura.TestNGSample.Guru99SiteRadioButton"/> -->
        	  	<!-- <methods>
        	  		<include name="patientGenderAgeGroupCheck"/>
        	  	</methods>
        	  </class> -->
+       	  <class name="com.obsqura.TestNGSample.SelectFromDropdown">
+       	  	<methods>
+       	  		<include name="elementCount"/>
+       	  	</methods>
+       	  </class>
        	<!-- <class name="com.obsqura.TestNGSample.Guru99SiteRadioButton"/> -->
        	 	<!-- <methods>
        	 		<include name="patientGenderCheck"/>
