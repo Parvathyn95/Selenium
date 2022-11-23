@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9718" started-at="2022-11-23T13:14:04Z" finished-at="2022-11-23T13:14:13Z">
+  <suite name="Suite" duration-ms="12523" started-at="2022-11-23T17:21:14Z" finished-at="2022-11-23T17:21:27Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="9718" started-at="2022-11-23T13:14:04Z" finished-at="2022-11-23T13:14:13Z">
+    <test name="Test" duration-ms="12523" started-at="2022-11-23T17:21:14Z" finished-at="2022-11-23T17:21:27Z">
       <class name="com.obsqura.TestNGSample.JquerySelect2Dropdown">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.JquerySelect2Dropdown@57fffcd7]" name="initBrowser" is-config="true" duration-ms="5851" started-at="2022-11-23T17:14:04Z" finished-at="2022-11-23T17:14:10Z">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.JquerySelect2Dropdown@57fffcd7]" name="initBrowser" is-config="true" duration-ms="8644" started-at="2022-11-23T21:21:14Z" finished-at="2022-11-23T21:21:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="selectAndDeselectMultipleValueDropDown()[pri:0, instance:com.obsqura.TestNGSample.JquerySelect2Dropdown@57fffcd7]" name="selectAndDeselectMultipleValueDropDown" duration-ms="2976" started-at="2022-11-23T17:14:10Z" description="Select one option among the dropdown" finished-at="2022-11-23T17:14:12Z">
+        <test-method status="PASS" signature="selectAndDeselectMultipleValueDropDown()[pri:0, instance:com.obsqura.TestNGSample.JquerySelect2Dropdown@57fffcd7]" name="selectAndDeselectMultipleValueDropDown" duration-ms="3031" started-at="2022-11-23T21:21:23Z" description="Select one option among the dropdown" finished-at="2022-11-23T21:21:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectAndDeselectMultipleValueDropDown -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.JquerySelect2Dropdown@57fffcd7]" name="browserQuit" is-config="true" duration-ms="874" started-at="2022-11-23T17:14:12Z" finished-at="2022-11-23T17:14:13Z">
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.JquerySelect2Dropdown@57fffcd7]" name="browserQuit" is-config="true" duration-ms="817" started-at="2022-11-23T21:21:26Z" finished-at="2022-11-23T21:21:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->

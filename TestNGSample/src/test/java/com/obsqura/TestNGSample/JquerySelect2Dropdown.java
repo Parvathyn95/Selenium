@@ -1,5 +1,6 @@
 package com.obsqura.TestNGSample;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -42,25 +43,34 @@ public class JquerySelect2Dropdown extends BaseObs{
 	}
 	@Test(description = "Select one option among the dropdown")
 	public void selectAndDeselectMultipleValueDropDown() {
-		int stateElementSize,stateElementSizeNew;
-		String inputHeader,expectedHeader="States";
 		driver.navigate().to("https://selenium.obsqurazone.com/jquery-select.php");
-		inputHeader = driver.findElement(By.xpath("//label[@for='inputEmail4']")).getText();
-		Assert.assertEquals(inputHeader, expectedHeader, "Actual and expected header not equal");
-		Select optionSelect = new Select(driver.findElement(By.xpath("(//select[@aria-hidden='true'])[2]")));
-		optionSelect.selectByVisibleText("Nevada");
-		optionSelect.selectByVisibleText("Oregon");
-		optionSelect.selectByVisibleText("Idaho");
-		optionSelect.selectByVisibleText("Wyoming");
-		List<WebElement> stateElements = optionSelect.getAllSelectedOptions();
-		stateElementSize = stateElements.size();
-		Assert.assertNotNull(stateElementSize, "List of dropdownElements are null");
-		optionSelect.deselectByVisibleText("Nevada");
-		optionSelect.deselectByVisibleText("Oregon");
-		optionSelect.deselectByVisibleText("Idaho");
-		optionSelect.deselectByVisibleText("Wyoming");
-		List<WebElement> stateElementsNew = optionSelect.getAllSelectedOptions();
-		stateElementSizeNew = stateElementsNew.size();
-		Assert.assertNotNull(stateElementSizeNew, "List of dropdownElements are not null");
-	}
+		WebElement states;
+		String actualText = null,element1,element2,element3;
+		List<String> expectedItems=new ArrayList<String>();
+		List<String> actualItems=new ArrayList<String>();
+		states=driver.findElement(By.xpath("(//select[@class='js-states-multiple form-control select2-hidden-accessible'])"));
+		Select obj=new Select(states);
+		if(obj.isMultiple()){
+		obj.selectByIndex(2);
+		obj.selectByIndex(4);
+		obj.selectByIndex(8);
+		List<WebElement> elements=obj.getOptions();
+		element1=elements.get(2).getText();
+		element2=elements.get(4).getText();
+		element3=elements.get(8).getText();
+		expectedItems.add(element1);
+		expectedItems.add(element2);
+		expectedItems.add(element3);
+		}
+		List <WebElement> selectedOptions= obj.getAllSelectedOptions();
+		actualItems.add(selectedOptions.get(0).getText());
+		actualItems.add(selectedOptions.get(1).getText());
+		actualItems.add(selectedOptions.get(2).getText());
+		if(expectedItems.equals(actualItems)) {
+		Assert.assertTrue(true, "Selected dropdown values and expected values are not same");
+		}
+		Assert.assertFalse(false);
+		obj.deselectAll();
+		Assert.assertTrue(true, "Dropdown field is not cleared");
+		}
 }
