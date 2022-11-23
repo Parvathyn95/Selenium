@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGSample.SeleniumFlavourCheckbox">
+      <class name="com.obsqura.TestNGSample.JquerySelect2Dropdown">
         <methods>
           <include name="initBrowser"/>
-          <include name="selectWebdriverCheckbox"/>
+          <include name="selectAndDeselectMultipleValueDropDown"/>
           <include name="browserQuit"/>
         </methods>
-      </class> <!-- com.obsqura.TestNGSample.SeleniumFlavourCheckbox -->
+      </class> <!-- com.obsqura.TestNGSample.JquerySelect2Dropdown -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

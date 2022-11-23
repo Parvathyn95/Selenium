@@ -50,19 +50,23 @@ public class SelectFromDropdown extends BaseObs {
 	}
 	@Test
 	public void multiSelectDropdown() {
-		String expectedMessage = "All selected colors are : Red,Yellow,Green",actualMessage;
+		String actualMessage,color1,color2,color3;
 		driver.navigate().to("https://selenium.obsqurazone.com/select-input.php");
+		WebElement getAllSelected = driver.findElement(By.xpath("//button[@id='button-all']"));
 		Select objSelect=new Select(driver.findElement(By.id("multi-select-field")));
 		objSelect.isMultiple();
 		objSelect.selectByIndex(0);
 		objSelect.selectByIndex(1);
 		objSelect.selectByIndex(2);
-		WebElement getAllSelected = driver.findElement(By.xpath("//button[@id='button-all']"));
-		if(getAllSelected.isSelected()) {
-		getAllSelected.click();	
-		actualMessage = driver.findElement(By.xpath("//div[@id='message-two']")).getText();
-		Assert.assertEquals(expectedMessage, actualMessage);
+		if(getAllSelected.isEnabled()) {
+			getAllSelected.click();	
+			List <WebElement> colorDropdown=objSelect.getOptions();
+			color1= colorDropdown.get(0).getText();
+			color2= colorDropdown.get(1).getText();
+			color3= colorDropdown.get(2).getText();
+			actualMessage = driver.findElement(By.xpath("(//div[@class='my-2'])[2]")).getText();
+			Assert.assertEquals(actualMessage, "All selected colors are : "+color3);
 		}
-		Assert.assertFalse(getAllSelected.isSelected(), "Get All Selected Button is already selected");
+		Assert.assertTrue(getAllSelected.isEnabled(), "get All Selected button is disabled");
 	}
 }

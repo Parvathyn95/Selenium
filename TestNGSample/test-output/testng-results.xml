@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13032" started-at="2022-11-23T02:42:42Z" finished-at="2022-11-23T02:42:55Z">
+  <suite name="Suite" duration-ms="9718" started-at="2022-11-23T13:14:04Z" finished-at="2022-11-23T13:14:13Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="13032" started-at="2022-11-23T02:42:42Z" finished-at="2022-11-23T02:42:55Z">
-      <class name="com.obsqura.TestNGSample.LocatorsBaseObs">
-        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.LocatorsBaseObs@f6c48ac]" name="initBrowser" is-config="true" duration-ms="10513" started-at="2022-11-23T06:42:42Z" finished-at="2022-11-23T06:42:52Z">
+    <test name="Test" duration-ms="9718" started-at="2022-11-23T13:14:04Z" finished-at="2022-11-23T13:14:13Z">
+      <class name="com.obsqura.TestNGSample.JquerySelect2Dropdown">
+        <test-method status="PASS" signature="initBrowser()[pri:0, instance:com.obsqura.TestNGSample.JquerySelect2Dropdown@57fffcd7]" name="initBrowser" is-config="true" duration-ms="5851" started-at="2022-11-23T17:14:04Z" finished-at="2022-11-23T17:14:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBrowser -->
-        <test-method status="PASS" signature="locatingbyLinkText()[pri:0, instance:com.obsqura.TestNGSample.LocatorsBaseObs@f6c48ac]" name="locatingbyLinkText" duration-ms="1147" started-at="2022-11-23T06:42:52Z" description="Locating By Link Text" finished-at="2022-11-23T06:42:53Z">
+        <test-method status="PASS" signature="selectAndDeselectMultipleValueDropDown()[pri:0, instance:com.obsqura.TestNGSample.JquerySelect2Dropdown@57fffcd7]" name="selectAndDeselectMultipleValueDropDown" duration-ms="2976" started-at="2022-11-23T17:14:10Z" description="Select one option among the dropdown" finished-at="2022-11-23T17:14:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- locatingbyLinkText -->
-        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.LocatorsBaseObs@f6c48ac]" name="browserQuit" is-config="true" duration-ms="1315" started-at="2022-11-23T06:42:53Z" finished-at="2022-11-23T06:42:55Z">
+        </test-method> <!-- selectAndDeselectMultipleValueDropDown -->
+        <test-method status="PASS" signature="browserQuit()[pri:0, instance:com.obsqura.TestNGSample.JquerySelect2Dropdown@57fffcd7]" name="browserQuit" is-config="true" duration-ms="874" started-at="2022-11-23T17:14:12Z" finished-at="2022-11-23T17:14:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-      </class> <!-- com.obsqura.TestNGSample.LocatorsBaseObs -->
+      </class> <!-- com.obsqura.TestNGSample.JquerySelect2Dropdown -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
