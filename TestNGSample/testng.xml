@@ -43,7 +43,12 @@
         <!--  <class name="com.obsqura.TestNGSample.ContinentDropDown"/> -->
         <!--  <class name="com.obsqura.TestNGSample.FindElementsSample"/> -->
        	 <!-- <class name="com.obsqura.TestNGSample.DatePickerSelect"/>   -->	 
-       	<!--  <class name="com.obsqura.TestNGSample.SelectFromDropdown"/> -->
+       	 <class name="com.obsqura.TestNGSample.LocatorsBaseObs"/>
+       	 	<!-- <methods>
+         		<include name="multiSelectDropdown"/> 
+         	</methods>
+         </class>  --> 
+ 
        	  <!-- <class name="com.obsqura.TestNGSample.GroupGenderAgeRadioButton"/> -->
        	 <!--  <class name="com.obsqura.TestNGSample.Guru99SiteRadioButton"/> -->
        	  	<!-- <methods>
@@ -55,7 +60,7 @@
        	  		<include name="elementCount"/>
        	  	</methods>
        	  </class> -->
-       	  <class name="com.obsqura.TestNGSample.SeleniumFlavourCheckbox"/>
+       	 <!--  <class name="com.obsqura.TestNGSample.SeleniumFlavourCheckbox"/> -->
        	  <!-- <class name="com.obsqura.TestNGSample.MultipleCheckboxDemo"/> -->
        <!-- 	<class name="com.obsqura.TestNGSample.Guru99SiteRadioButton"/> -->
        	 	<!-- <methods>
@@ -82,7 +87,6 @@
        	 </class>
 	<class name="com.obsqura.TestNGSample.CheckBoxSample"/>
         <class name="com.obsqura.TestNGSample.AnnotationsSample"/> -->
- 
     </classes>
 
   	</test><!-- Test -->

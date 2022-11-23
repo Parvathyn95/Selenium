@@ -26,6 +26,7 @@ public class ContinentDropDown extends BaseTutPoint{
 		   for(int i=0;i<=6;i++) {
 			System.out.println(elementSize.get(i).getText());	
 		   }
+		   Assert.assertNotNull(elementSize.size(), "No Elements found");
 	}
 
 }
