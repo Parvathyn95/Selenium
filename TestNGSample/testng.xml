@@ -43,11 +43,11 @@
         <!--  <class name="com.obsqura.TestNGSample.ContinentDropDown"/> -->
         <!--  <class name="com.obsqura.TestNGSample.FindElementsSample"/> -->
        	 <!-- <class name="com.obsqura.TestNGSample.DatePickerSelect"/>   -->	 
-       	 <class name="com.obsqura.TestNGSample.JquerySelect2Dropdown">
-       	 <methods>
+       	 <class name="com.obsqura.TestNGSample.SeleniumCheckRadioEnSel"/>
+       	<!--  <methods>
          		<include name="selectAndDeselectMultipleValueDropDown"/> 
          	</methods>
-         </class>  
+         </class>   -->
        	 	<!-- <methods>
          		<include name="multiSelectDropdown"/> 
          	</methods>

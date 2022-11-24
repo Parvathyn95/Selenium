@@ -45,7 +45,7 @@ public class JquerySelect2Dropdown extends BaseObs{
 	public void selectAndDeselectMultipleValueDropDown() {
 		driver.navigate().to("https://selenium.obsqurazone.com/jquery-select.php");
 		WebElement states;
-		String actualText = null,element1,element2,element3;
+		String actualText = null,elementOne,elementTwo,elementThree;
 		List<String> expectedItems=new ArrayList<String>();
 		List<String> actualItems=new ArrayList<String>();
 		states=driver.findElement(By.xpath("(//select[@class='js-states-multiple form-control select2-hidden-accessible'])"));
@@ -55,12 +55,12 @@ public class JquerySelect2Dropdown extends BaseObs{
 		obj.selectByIndex(4);
 		obj.selectByIndex(8);
 		List<WebElement> elements=obj.getOptions();
-		element1=elements.get(2).getText();
-		element2=elements.get(4).getText();
-		element3=elements.get(8).getText();
-		expectedItems.add(element1);
-		expectedItems.add(element2);
-		expectedItems.add(element3);
+		elementOne=elements.get(2).getText();
+		elementTwo=elements.get(4).getText();
+		elementThree=elements.get(8).getText();
+		expectedItems.add(elementOne);
+		expectedItems.add(elementTwo);
+		expectedItems.add(elementThree);
 		}
 		List <WebElement> selectedOptions= obj.getAllSelectedOptions();
 		actualItems.add(selectedOptions.get(0).getText());
