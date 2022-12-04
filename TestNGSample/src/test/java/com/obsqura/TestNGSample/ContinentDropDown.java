@@ -15,7 +15,7 @@ public class ContinentDropDown extends BaseTutPoint{
 		Select objSelection = new Select(driver.findElement(By.xpath("//select[@name='continents']")));
 		objSelection.selectByVisibleText(inputText);
 		actualText =objSelection.getFirstSelectedOption().getText();
-		System.out.println(actualText);
+		System.out.println(actualText);   //to print "Australia"
 		Assert.assertEquals(actualText, inputText,"Actual selected value not the same as inputText");
 	}
 	@Test

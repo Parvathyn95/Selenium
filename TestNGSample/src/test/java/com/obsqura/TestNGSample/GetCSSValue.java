@@ -60,22 +60,20 @@ public class GetCSSValue extends BaseObs {
 	}
 	@Test
 	public void enDisSel() {
-		Boolean enabled,displayed,selected;
-		Boolean flag=false;
-		enabled=driver.findElement(By.xpath("//button[@id='button-one']")).isEnabled();
-		if(enabled==true) {
-			flag=true;
-		}
-		Assert.assertTrue(flag, "Button is not enabled");
-		displayed=driver.findElement(By.xpath("//button[@id='button-one']")).isDisplayed();
-		if(displayed==true) {
-			flag=true;
-		}
-		Assert.assertTrue(flag, "Button is not displayed");
-		selected=driver.findElement(By.xpath("//button[@id='button-one']")).isSelected();
-		if(selected==false) {
-			flag=true;
-		}
-		Assert.assertFalse(flag, "Button is not selected");
+		
+		WebElement button = driver.findElement(By.xpath("//button[@id='button-one']"));
+			if(button.isEnabled()) {
+			}
+			Assert.assertTrue(button.isEnabled(), "Button is not enabled");
+		
+			if(button.isDisplayed()) {
+			
+			}
+			Assert.assertTrue(button.isDisplayed(), "Button is not displayed");
+		
+			if(button.isSelected()) {
+			
+			}
+			Assert.assertFalse(button.isSelected(), "Button is already selected");
 	}
 }

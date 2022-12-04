@@ -14,16 +14,14 @@ public class SingleCheckboxDemo extends BaseObs{
 		WebElement checkBox = driver.findElement(By.xpath("//input[@id='gridCheck']"));
 		checkBoxIsSelected =  checkBox.isSelected();
 		checkBoxIsDisplayed = checkBox.isDisplayed();
-		   if(checkBoxIsDisplayed==true) {
-			 msgFlag=true;
-			 	if(checkBoxIsSelected=false) {
-			 		msgFlag=true;
+		   if(checkBox.isDisplayed()) {
+			 	if((checkBox.isSelected())!=true) {
 			 		checkBox.click();
 			 		actualMessage = driver.findElement(By.xpath("//div[@id='message-one']")).getText();
 			 		Assert.assertEquals(expectedMessage, actualMessage);
 			 	}
-			 	Assert.assertTrue(msgFlag,"Click Checkbox is already selected"); 
+			 	Assert.assertFalse(checkBox.isSelected(),"Click Checkbox is already selected"); 
 		   }
-			Assert.assertTrue(msgFlag,"Click Checkbox is not displayed");
+			Assert.assertTrue(checkBox.isDisplayed(),"Click Checkbox is not displayed");
 	}
 }

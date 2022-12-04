@@ -28,12 +28,12 @@ public class SeleniumFlavourCheckbox extends BaseTutPoint {
 	@Test
 	public void selectWebdriverCheckbox() {
 		WebElement selWebdriver=driver.findElement(By.xpath("//input[@value='Selenium Webdriver']"));
-		selWebdriver.click();
 		if(selWebdriver.isEnabled()) {
-		Assert.assertTrue(true, "Selenium webdriver is not enabled");
+			if((selWebdriver.isSelected()!=true)) {
+				selWebdriver.click();
+			}
+			Assert.assertFalse(selWebdriver.isSelected(), "Selenium WebDriver already selected");
 		}
-		else {
-		Assert.assertFalse(false);
-		}
-		}
+		Assert.assertTrue(selWebdriver.isEnabled(), "Selenium WebDriver disabled");
+	}
 }

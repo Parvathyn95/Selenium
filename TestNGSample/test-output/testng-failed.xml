@@ -3,13 +3,24 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.obsqura.TestNGSample.JquerySelect2Dropdown">
+      <class name="com.obsqura.TestNGSample.LocateByContaindOrAnd">
         <methods>
+          <include name="locatingBySibling"/>
+          <include name="locatingByOr"/>
+          <include name="locatingByPreceding"/>
+          <include name="locatingByAnd"/>
+          <include name="locatingByFollowing"/>
+          <include name="locatingByParent"/>
+          <include name="locatingByStartsWith"/>
+          <include name="locatingByChild"/>
+          <include name="locatingByContains"/>
           <include name="initBrowser"/>
-          <include name="selectAndDeselectMultipleValueDropDown"/>
+          <include name="locatingByTextOf"/>
+          <include name="locatingByAncestor"/>
           <include name="browserQuit"/>
+          <include name="locatingBySelf"/>
         </methods>
-      </class> <!-- com.obsqura.TestNGSample.JquerySelect2Dropdown -->
+      </class> <!-- com.obsqura.TestNGSample.LocateByContaindOrAnd -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

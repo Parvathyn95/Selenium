@@ -16,7 +16,7 @@ public class Guru99SiteRadioButton extends BaseGuru {
 		WebElement reset = driver.findElement(By.xpath("//input[@value='Reset']"));
 		WebElement check = driver.findElement(By.xpath("//input[@value='Check']"));
 		if(yes.isDisplayed()&&no.isDisplayed()&&reset.isDisplayed()&&check.isDisplayed()) {
-			if(yes.isSelected()&&no.isSelected()) {
+			if((yes.isSelected()&&no.isSelected())==false) {
 					if(reset.isEnabled()&&check.isEnabled()==true) {
 						check.click();
 						actualMessage = driver.findElement(By.xpath("//p[@class='radiobutton']")).getText();

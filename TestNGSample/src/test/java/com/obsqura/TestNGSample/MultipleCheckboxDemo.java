@@ -20,9 +20,8 @@ public class MultipleCheckboxDemo extends BaseObs {
 		WebElement checkBox4 = driver.findElement(By.xpath("//input[@id='check-box-four']"));
 		WebElement selectAll = driver.findElement(By.xpath("//input[@id='button-two']"));
 		   if(checkBox1.isDisplayed()&&checkBox2.isDisplayed()&&checkBox3.isDisplayed()&&checkBox4.isDisplayed()) {
-			 	if(checkBox1.isSelected()&&checkBox2.isSelected()&&checkBox3.isSelected()&&checkBox4.isSelected()) {
+			 	if((checkBox1.isSelected()&&checkBox2.isSelected()&&checkBox3.isSelected()&&checkBox4.isSelected())!=true) {
 			 		if(selectAll.isEnabled()) {
-			 		  		//msgFlag=true;
 			 		  		selectAll.click();
 			 		  		actualButtonValue = driver.findElement(By.xpath("//input[@value='Unselect All']")).getAttribute("value");
 			 		  		Assert.assertEquals(expectedButtonValue, actualButtonValue);

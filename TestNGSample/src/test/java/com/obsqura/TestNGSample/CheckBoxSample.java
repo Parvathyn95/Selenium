@@ -11,16 +11,14 @@ public class CheckBoxSample extends BaseObs {
 		String expMessage="Success - Check box is checked",actMessage;
 		driver.navigate().to("https://selenium.obsqurazone.com/check-box-demo.php");
 		WebElement check = driver.findElement(By.xpath("//input[@id='gridCheck']"));
-		Boolean selected=check.isSelected();
-		if(selected==false) {
-			check.click();
 			if(check.isSelected()) {
-			actMessage=driver.findElement(By.xpath("//div[@id='message-one']")).getText();
-			Assert.assertEquals(actMessage, expMessage);
+				check.click();
+				if(check.isSelected()) {
+					actMessage=driver.findElement(By.xpath("//div[@id='message-one']")).getText();
+					Assert.assertEquals(actMessage, expMessage);
+				}
+				Assert.assertTrue(check.isSelected(), "Button is not selected");
 			}
-			Assert.assertTrue(check.isSelected(), "Button is not selected");
-		}
-		Assert.assertTrue(selected==false, "Button is already selected");
-		
+			Assert.assertFalse(check.isSelected(), "Button is already selected");
 	}
 }

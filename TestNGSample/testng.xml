@@ -43,9 +43,9 @@
         <!--  <class name="com.obsqura.TestNGSample.ContinentDropDown"/> -->
         <!--  <class name="com.obsqura.TestNGSample.FindElementsSample"/> -->
        	 <!-- <class name="com.obsqura.TestNGSample.DatePickerSelect"/>   -->	 
-       	 <class name="com.obsqura.TestNGSample.SeleniumCheckRadioEnSel"/>
-       	<!--  <methods>
-         		<include name="selectAndDeselectMultipleValueDropDown"/> 
+       	 <class name="com.obsqura.TestNGSample.LocateByContaindOrAnd"/>
+       <!-- 	 <methods>
+         		<include name="multipleCheckboxSample"/>
          	</methods>
          </class>   -->
        	 	<!-- <methods>
