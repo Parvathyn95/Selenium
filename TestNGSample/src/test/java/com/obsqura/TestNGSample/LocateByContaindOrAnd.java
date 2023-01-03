@@ -163,7 +163,7 @@ public class LocateByContaindOrAnd extends BaseObs {
 	@Test
 	public void locatingByAncestor() {
 		String inputText = "Lakme Eyekajal";
-		WebElement singleInputField = driver.findElement(By.xpath("/input[@id='single-input-field']//ancestor::div[@class='form-group']//child::input[@placeholder='Message']"));
+		WebElement singleInputField = driver.findElement(By.xpath("//input[@id='single-input-field']//ancestor::div[@class='form-group']//child::input[@placeholder='Message']"));
 		WebElement showMessageButton = driver.findElement(By.xpath("//input[@id='single-input-field']//ancestor::form[@method='POST']//child::button[@id='button-one']"));
 			if(singleInputField.isEnabled()) {
 				String actualMessage,expectedMessage="Your Message : "+inputText;

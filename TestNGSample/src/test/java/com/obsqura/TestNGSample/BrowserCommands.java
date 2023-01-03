@@ -10,8 +10,7 @@ public class BrowserCommands extends Base {
 	@Test
 	public void verifyTitle() {
 		String actualTitle, actualUrl, actualSource, expectedTitle="Welcome to Amazon.ae Shop Online in UAE for Electronics, Apparel, Computers, Grocery &amp; more | Amazon.ae";
-		actualTitle = driver.getTitle(); // get title of actual page
-		
+		actualTitle = driver.getTitle(); // get title of actual page	
 		actualSource = driver.getPageSource();
 		Assert.assertEquals(expectedTitle, actualTitle);
 	//	SoftAssert softAssert=new SoftAssert();
